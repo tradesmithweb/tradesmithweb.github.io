@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>[B] Tradesmith Web | Websites for Plumbers, Roofers, Electricians and HVAC</title>
+<meta name="description" content="We build your new website first. You see it before you pay anything. Websites for trade businesses: $500 once, $40 a month for hosting and edits.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#14213d;--navy2:#1f2f50;--ink:#14213d;--muted:#5b6474;--line:#e5e4de;--bg:#f6f5f1;--white:#fff;--a:#c2410c;--a2:#9a3412;--ah:#ea580c;--soft:#fff1e7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.6 Inter,system-ui,sans-serif}
+h1,h2,h3,.logo{font-family:Archivo,Inter,sans-serif;letter-spacing:-.02em;text-wrap:balance}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.btn{display:inline-block;background:var(--a);color:#fff;text-decoration:none;border-radius:10px;padding:14px 24px;border:0;font:inherit;font-weight:700;cursor:pointer}
+.btn:hover{background:var(--a2)}.btn.sm{padding:9px 16px;font-size:.95rem}
+.eyebrow{font:600 .78rem Inter,sans-serif;text-transform:uppercase;letter-spacing:.09em;color:var(--a);margin:0 0 10px}
+h2{font-size:clamp(1.75rem,3.6vw,2.5rem);line-height:1.12;margin:0 0 12px}
+.sub{color:var(--muted);max-width:640px;margin:0 0 40px;font-size:1.08rem}
+section{padding:88px 0;scroll-margin-top:72px}
+.white{background:var(--white)}.dark{background:var(--navy);color:#fff}.dark .sub{color:#b6c0cf}.dark .eyebrow{color:var(--ah)}
+header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:20;border-top:4px solid var(--a);border-bottom:1px solid rgba(255,255,255,.08)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:68px;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.2rem;color:#fff;text-decoration:none}
+.mark{width:26px;height:26px;border-radius:7px;background:var(--a);display:grid;place-items:center}
+nav{display:flex;gap:28px;align-items:center}nav a{color:#cbd2dc;text-decoration:none;font-size:.95rem}nav a:hover{color:#fff}nav a.btn{color:#fff}
+.hero{background:var(--navy);color:#fff;padding:72px 0 88px;overflow:hidden;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center;position:relative;z-index:1}
+h1{font-size:clamp(2.3rem,5vw,3.7rem);line-height:1.04;margin:0 0 20px}
+h1 em{font-style:normal;color:var(--ah)}
+.hero p.lead{font-size:1.18rem;color:#c7cfdb;max-width:540px;margin:0 0 30px}
+.actions{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.ghost{color:#fff;text-decoration:none;font-weight:600;border-bottom:2px solid rgba(255,255,255,.35);padding:12px 0 2px}
+.checks{display:flex;gap:8px;flex-wrap:wrap;margin:30px 0 0}
+.checks span{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:7px 14px;font-size:.92rem;color:#e2e8f0}
+.checks span b{color:#fff}
+.devices{position:relative}
+.browser{border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 30px 70px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.08)}
+.browser .bar{height:34px;background:#e9e8e4;display:flex;align-items:center;gap:7px;padding:0 14px}
+.browser .bar i{width:11px;height:11px;border-radius:50%;background:#c9c8c3}
+.browser .bar span{margin-left:14px;flex:1;background:#fff;border-radius:6px;font-size:.75rem;color:#6b7280;padding:3px 10px;max-width:260px}
+.cap{color:#8f9bb0;font-size:.85rem;text-align:center;margin:14px 0 0}
+.samples{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.sample{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .15s,box-shadow .15s}
+.sample:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(15,23,42,.1)}
+.sample .shot{position:relative;border-bottom:1px solid var(--line)}
+.sample .bar{height:26px;background:#eeeeec;display:flex;align-items:center;gap:6px;padding:0 12px}
+.sample .bar i{width:9px;height:9px;border-radius:50%;background:#cfcfcb}
+.sample .t{display:flex;justify-content:space-between;align-items:center;padding:16px 20px}
+.sample b{font-family:Archivo;font-size:1.08rem}.sample small{color:var(--muted);display:block}
+.sample .go{color:var(--a);font-weight:600;font-size:.95rem;white-space:nowrap}
+.sample .shot img{aspect-ratio:16/9;object-fit:cover;object-position:top;width:100%}
+.after{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin:34px 0 0;color:var(--muted)}
+.pill{display:none}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;position:relative}
+.steps:before{content:"";position:absolute;top:21px;left:22px;right:calc(33.33% - 22px);height:2px;background:var(--line)}
+.step{position:relative}.step .n{width:44px;height:44px;border-radius:50%;background:var(--a);color:#fff;font:800 1.05rem Archivo;display:grid;place-items:center;margin-bottom:18px;box-shadow:0 0 0 8px var(--white)}
+.step h3{margin:0 0 6px;font-size:1.15rem}.step p{margin:0;color:var(--muted)}
+.featwrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.featimg{border-radius:28px;background:#0b0b0c;padding:10px;max-width:330px;margin:0 auto;box-shadow:0 30px 60px rgba(20,33,61,.25)}.featimg img{border-radius:20px;aspect-ratio:9/17;object-fit:cover;object-position:top;width:100%}
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:30px 34px}.feat .card{background:none;border:0;padding:0}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px}
+.card h3{margin:0 0 6px;font-size:1.12rem}.card p{margin:0;color:var(--muted)}
+.ic{width:44px;height:44px;border-radius:12px;background:var(--soft);color:var(--a);display:grid;place-items:center;margin-bottom:16px}
+.promise{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.promise div{background:var(--navy2);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:24px}
+.promise b{display:block;font-family:Archivo;font-size:1.1rem;margin-bottom:6px}.promise p{margin:0;color:#b6c0cf}
+.promise svg{color:var(--ah);margin-bottom:14px}
+.package{display:grid;grid-template-columns:1fr auto 1fr;align-items:stretch;max-width:900px;margin:0 auto;text-align:left;background:#fff;border:2px solid var(--a);border-radius:20px;position:relative}
+.package:before{content:"One package · pay after you approve it";position:absolute;top:-14px;left:50%;transform:translateX(-50%);white-space:nowrap;background:var(--a);color:#fff;font-size:.8rem;font-weight:600;padding:4px 14px;border-radius:999px}
+.part{padding:34px 32px}.plus{display:grid;place-items:center;font:800 2rem Archivo;color:var(--a);border-left:1px solid var(--line);border-right:1px solid var(--line);padding:0 18px;background:var(--soft)}
+.part h3{margin:0;font-size:1.15rem}.part .big{font:800 3rem/1.1 Archivo;letter-spacing:-.03em;margin:10px 0 4px}
+.part .big small{font:500 1rem Inter;color:var(--muted)}.part .per{color:var(--muted);margin:0}
+.part ul{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
+.part li{padding-left:28px;position:relative}.part li:before{content:"";position:absolute;left:2px;top:6px;width:13px;height:7px;border-left:2.5px solid var(--a);border-bottom:2.5px solid var(--a);transform:rotate(-45deg)}
+.center{text-align:center}.center .sub{margin-left:auto;margin-right:auto}
+.scope{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:860px;margin:22px auto 0;text-align:left}.scope div{border:1px dashed #d6d3c9;border-radius:14px;padding:18px 22px}.scope p{margin:6px 0 0;color:var(--muted);font-size:.95rem}
+.note{color:var(--muted);font-size:.93rem;text-align:center;margin:22px 0 0}
+.faq{display:grid;grid-template-columns:1fr 1.6fr;gap:48px}
+details{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:10px}
+summary{font-weight:600;cursor:pointer;font-size:1.04rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 22px;min-height:52px}
+summary:after{content:"+";color:var(--a);font-weight:700;font-size:1.3rem;line-height:1}details[open] summary:after{content:"−"}
+summary::-webkit-details-marker{display:none}details p{color:var(--muted);margin:0;padding:0 22px 18px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.contact form{background:var(--navy2);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:28px;display:grid;gap:12px}
+.contact label{font-size:.95rem;color:#cbd2dc;display:grid;gap:6px}
+.contact input{font:inherit;font-size:16px;padding:12px 14px;border-radius:10px;border:1px solid #334155;background:#0f172a;color:#fff}
+.err{color:#fca5a5;margin:0}
+.contact .done{background:var(--navy2);border-radius:18px;padding:28px;font-size:1.05rem}
+.mail{color:#fff;font-weight:600;display:inline-block;padding:8px 0}
+footer{background:var(--navy);color:#8b95a7;font-size:.9rem;padding:26px 0;border-top:1px solid rgba(255,255,255,.08)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}footer a{color:#cbd2dc}
+@media (max-width:960px){.hero .wrap,.contact,.faq{grid-template-columns:1fr}.devices{max-width:620px}.hero{padding:52px 0 60px}
+.promise,.feat{grid-template-columns:1fr 1fr}}
+@media (max-width:960px){.featwrap{grid-template-columns:1fr}.featimg{max-width:240px}}
+@media (max-width:680px){nav a:not(.btn){display:none}section{padding:60px 0}.feat,.steps,.scope,.package{grid-template-columns:1fr}.plus{border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:6px 0}.package:before{white-space:normal;text-align:center;width:max-content;max-width:90%}.part{padding:28px 22px}.promise{grid-template-columns:1fr 1fr;gap:12px}.promise div{padding:18px}.promise p{font-size:.92rem}.steps:before{display:none}
+.samples{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -20px;padding:0 20px 8px}.sample{flex:0 0 74%;scroll-snap-align:start}.sample .t{flex-direction:column;align-items:flex-start;gap:6px}.sample .shot img{aspect-ratio:9/16}.sample .bar{display:none}.pill{top:10px}
+.checks span{font-size:.85rem;padding:5px 10px}.featimg{display:none}
+.browser .bar span{display:none}}
+/* variant b: Centered headline, wide showcase: laptop in the middle, a phone on each side */
+
+.wrap{max-width:1240px}
+.lap{border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 40px 90px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.08)}
+.lap .bar{height:34px;background:#e9e8e4;display:flex;align-items:center;gap:7px;padding:0 14px}
+.lap .bar i{width:11px;height:11px;border-radius:50%;background:#c9c8c3}
+.lap .bar span{margin-left:14px;flex:1;background:#fff;border-radius:6px;font-size:.75rem;color:#6b7280;padding:3px 10px;max-width:300px;white-space:nowrap;overflow:hidden}
+.ph{position:relative;border-radius:38px;background:#0b0b0c;padding:10px;box-shadow:0 40px 80px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.1)}
+.ph img{border-radius:29px;width:100%;aspect-ratio:9/18.5;object-fit:cover;object-position:top}
+.ph .notch{position:absolute;top:18px;left:50%;transform:translateX(-50%);width:34%;height:20px;background:#0b0b0c;border-radius:12px;z-index:2}
+.cap{color:#8f9bb0;font-size:.85rem;margin:18px 0 0}
+
+.hero{background:linear-gradient(180deg,#14213d 0%,#14213d 72%,var(--bg) 72%);padding:84px 0 70px;text-align:center}
+.hero .wrap{display:block}
+.hero p.lead{margin:0 auto 30px;max-width:640px}
+.hero h1{max-width:860px;margin-left:auto;margin-right:auto;font-size:clamp(2.4rem,5.4vw,4.2rem)}
+.hero .actions,.hero .checks{justify-content:center}
+.showcase{position:relative;max-width:1100px;margin:64px auto 0;display:flex;justify-content:center;align-items:flex-end}
+.showcase .lap{width:64%;position:relative;z-index:1}
+.showcase .ph{width:200px;position:relative;z-index:2}
+.showcase .ph.l{margin-right:-70px;transform:rotate(-4deg);margin-bottom:-30px}
+.showcase .ph.r{margin-left:-70px;transform:rotate(4deg);margin-bottom:-30px}
+.cap{text-align:center;color:var(--muted)}
+@media (max-width:860px){.showcase .ph{width:130px;border-radius:26px;padding:7px}.showcase .ph.l{margin-right:-40px}.showcase .ph.r{margin-left:-40px}.ph img{border-radius:20px}}
+@media (max-width:560px){.showcase .lap{width:100%}.showcase .ph{display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#"><span class="mark"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></span>Tradesmith Web</a>
+<nav><a href="#samples">Samples</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a class="btn sm" href="#contact">Free preview</a></nav>
+</div></header>
+
+<div class="hero"><div class="wrap">
+<p class="eyebrow">Websites for trade businesses</p>
+<h1>Your new website, built <em>before</em> you pay anything.</h1>
+<p class="lead">For plumbers, roofers, electricians and HVAC companies. We build a preview of your new site first. Like it, and it goes live. Don't, and you owe nothing.</p>
+<div class="actions"><a class="btn" href="#contact">Get my free preview</a><a class="ghost" href="#samples">See sample sites</a></div>
+<div class="checks"><span><b>$500</b> + $40/mo</span><span>Pay only if you like it</span><span>No contract</span></div>
+
+<div class="showcase"><div class="ph l"><div class="notch"></div><img src="img/ph-plumber.webp" alt="Sample trade business website on a phone" width="1000" height="1960"></div><div class="lap "><div class="bar"><i></i><i></i><i></i><span>tradesmithweb.github.io/samples/roofer</span></div><img src="img/hero-roofer.webp" alt="Sample trade business website on a laptop" width="2000" height="1280"></div><div class="ph r"><div class="notch"></div><img src="img/ph-hvac.webp" alt="Sample trade business website on a phone" width="1000" height="1960"></div></div><p class="cap">Sample sites for made-up companies</p>
+</div></div>
+<main>
+<section id="samples"><div class="wrap">
+<p class="eyebrow">Sample sites</p>
+<h2>See what you'd get</h2>
+<p class="sub">Four sample sites for made-up businesses. Open them on your phone and tap around. Yours gets your name, services, towns, photos and phone number.</p>
+<div class="samples">
+<a class="sample" href="samples/plumber/" target="_blank" rel="noopener"><div class="shot"><div class="bar"><i></i><i></i><i></i></div><span class="pill">Sample</span><picture><source media="(max-width:680px)" srcset="img/plumber-phone.webp"><img src="img/plumber-desk.webp" alt="Plumber sample site" width="960" height="600" loading="lazy"></picture></div><div class="t"><div><b>Plumber</b><small>Emergency banner and a call bar that stays on screen</small></div><span class="go">Open sample →</span></div></a>
+<a class="sample" href="samples/roofer/" target="_blank" rel="noopener"><div class="shot"><div class="bar"><i></i><i></i><i></i></div><span class="pill">Sample</span><picture><source media="(max-width:680px)" srcset="img/roofer-phone.webp"><img src="img/roofer-desk.webp" alt="Roofer sample site" width="960" height="600" loading="lazy"></picture></div><div class="t"><div><b>Roofer</b><small>Free inspection offer and insurance-claim help up front</small></div><span class="go">Open sample →</span></div></a>
+<a class="sample" href="samples/electrician/" target="_blank" rel="noopener"><div class="shot"><div class="bar"><i></i><i></i><i></i></div><span class="pill">Sample</span><picture><source media="(max-width:680px)" srcset="img/electrician-phone.webp"><img src="img/electrician-desk.webp" alt="Electrician sample site" width="960" height="600" loading="lazy"></picture></div><div class="t"><div><b>Electrician</b><small>License, permits and written quotes shown first</small></div><span class="go">Open sample →</span></div></a>
+<a class="sample" href="samples/hvac/" target="_blank" rel="noopener"><div class="shot"><div class="bar"><i></i><i></i><i></i></div><span class="pill">Sample</span><picture><source media="(max-width:680px)" srcset="img/hvac-phone.webp"><img src="img/hvac-desk.webp" alt="Heating and AC sample site" width="960" height="600" loading="lazy"></picture></div><div class="t"><div><b>Heating and AC</b><small>Same-day service and repair-or-replace advice</small></div><span class="go">Open sample →</span></div></a>
+</div>
+<p class="after"><a class="btn" href="#contact">Get my free preview</a><span>Yours is built with your name, services and towns.</span></p>
+</div></section>
+
+<section id="how" class="white"><div class="wrap">
+<p class="eyebrow">How it works</p>
+<h2>No deposit. No sales pitch.</h2>
+<p class="sub">You see your finished site before you decide anything.</p>
+<div class="steps">
+<div class="step"><div class="n">1</div><h3>Tell us your business</h3><p>Send your business name and city, or just reply to our email.</p></div>
+<div class="step"><div class="n">2</div><h3>Get your preview link</h3><p>Within 3 business days. One round of changes is included.</p></div>
+<div class="step"><div class="n">3</div><h3>Approve it, then pay</h3><p>It goes live on your own domain. You pay after that, not before.</p></div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<p class="eyebrow">What's included</p>
+<h2>Built to get you calls</h2>
+<p class="sub">Every site is made for someone with a problem right now, looking for help on their phone.</p>
+<div class="featwrap"><div class="featimg"><img src="img/electrician-phone.webp" alt="Sample electrician website on a phone" width="750" height="1623" loading="lazy"></div>
+<div class="feat">
+<div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div><h3>Call button everywhere</h3><p>One tap from any screen and they're talking to you, not the next company.</p></div>
+<div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div><h3>Quote requests by email</h3><p>A short form that sends job requests straight to your inbox, day or night.</p></div>
+<div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>Made for phones first</h3><p>Big text, big buttons, and a call bar that stays on screen.</p></div>
+<div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></div><h3>Easy for Google to read</h3><p>Your services and towns go into the titles, headings and business details Google reads. Nobody honest can promise rankings, and we don't.</p></div>
+<div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div><h3>Fast and simple</h3><p>No page builders or heavy plugins. Just a clean site that loads quickly.</p></div>
+<div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></div><h3>Changes when you ask</h3><p>New number, new service, holiday hours. Email us and it's done within 2 business days.</p></div>
+</div></div>
+</div></section>
+
+<section class="dark"><div class="wrap">
+<p class="eyebrow">Our promise</p>
+<h2>You take no risk</h2>
+<p class="sub">We're a new business. That's exactly why you see your site before paying: you shouldn't have to trust us first.</p>
+<div class="promise">
+<div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><b>See it first</b><p>No deposit. You pay only after you approve the finished site.</p></div>
+<div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg><b>Walk away free</b><p>If the preview isn't for you, you owe nothing.</p></div>
+<div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="M10.8 12.2L21 2M17 6l3 3M14 9l2 2"/></svg><b>Your domain is yours</b><p>Registered in your name. It stays with you, always.</p></div>
+<div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><b>Leave anytime</b><p>Cancel the monthly plan and we send you every file of your site.</p></div>
+</div>
+</div></section>
+
+<section id="pricing" class="white"><div class="wrap center">
+<p class="eyebrow">Pricing</p>
+<h2>One price. No surprises.</h2>
+<p class="sub">You pay after you approve the finished site. Not before.</p>
+<div class="package">
+<div class="part"><h3>Your website</h3><div class="big">$500</div><p class="per">One time, after you approve it</p>
+<ul><li>A complete one-page site: services, towns, photos, quote form</li><li>Call and text buttons on every screen</li><li>Business details set up for Google</li><li>Connected to your own domain</li></ul></div>
+<div class="plus" aria-hidden="true">+</div>
+<div class="part"><h3>Hosting and edits</h3><div class="big">$40<small> / month</small></div><p class="per">Starts when your site goes live. Cancel anytime.</p>
+<ul><li>Hosting and the padlock (SSL) included</li><li>Small changes: text, photos, hours, phone</li><li>Done within 2 business days</li><li>Bigger jobs, like a new page, get a price first</li></ul></div>
+</div>
+<div class="scope"><div><b>Included</b><p>One page with up to 8 services and 10 towns, your photos or matching stock photos, call and text buttons, quote form, Google business details, one round of changes before launch.</p></div><div><b>Not included</b><p>Logo design, photography, extra pages (priced before we start), online booking or payment systems.</p></div></div>
+<p class="note">Your domain name costs about $12 a year, paid directly by you, so it's always in your name.</p>
+<p style="margin:26px 0 0"><a class="btn" href="#contact">Get my free preview</a></p>
+</div></section>
+
+<section id="faq"><div class="wrap faq">
+<div><p class="eyebrow">FAQ</p><h2>Questions</h2><p class="sub">Anything else? Email tradesmithweb@gmail.com.</p></div>
+<div>
+<details><summary>Why is it cheaper than other web designers?</summary><p>We only build sites for trade businesses, from one design made for trades, so we don't start from scratch every time. You still get your own words, photos and colors.</p></details>
+<details><summary>Do I own my domain and site?</summary><p>Yes. The domain is registered in your name. If you cancel, we send you every file of your site.</p></details>
+<details><summary>I already have a website. Can you replace it?</summary><p>Yes. We build the new one as a preview first. Your old site stays up until you approve the switch.</p></details>
+<details><summary>What do you need from me?</summary><p>Your business name, phone number, services and the towns you cover. Photos of your work and team help but aren't required.</p></details>
+<details><summary>What happens if I cancel the monthly plan?</summary><p>We send you the site files and help move it wherever you want. No cancellation fee.</p></details>
+<details><summary>Who writes the words on the site?</summary><p>We do, based on your services and area. You can change anything before it goes live.</p></details>
+</div>
+</div></section>
+
+<section id="contact" class="dark"><div class="wrap contact">
+<div>
+<p class="eyebrow">Free preview</p>
+<h2>Want to see yours?</h2>
+<p class="sub" style="margin-bottom:20px">Send your business name and city. Your preview link arrives within 3 business days. Free, and you're under no obligation.</p>
+<p style="color:#b6c0cf;margin:0">Got our email already? Just reply to it. Or write to <a class="mail" href="mailto:tradesmithweb@gmail.com?subject=Free%20website%20preview">tradesmithweb@gmail.com</a>. We reply within one business day, and every email is answered by the person building your site.</p>
+</div>
+<form id="cf">
+<input type="hidden" name="access_key" value="e62425fa-aae5-42e2-921f-4ee268a73d63"><input type="hidden" name="subject" value="New preview request"><input type="checkbox" name="botcheck" style="display:none">
+<label>Business name<input name="business" required autocomplete="organization"></label>
+<label>City and state<input name="city" required placeholder="e.g. Tulsa, OK"></label>
+<label>Your email<input name="email" type="email" required autocomplete="email"></label>
+<label>Phone (optional)<input name="phone" type="tel" autocomplete="tel"></label>
+<button class="btn">Get my free preview</button>
+<p class="err" role="alert" hidden>Could not send. Please email tradesmithweb@gmail.com instead.</p>
+</form>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Tradesmith Web · <a href="mailto:tradesmithweb@gmail.com">tradesmithweb@gmail.com</a></span><span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · Sample site photos from Unsplash</span></div></footer>
+<script>
+document.getElementById('cf').addEventListener('submit',async e=>{e.preventDefault();const f=e.target,b=f.querySelector('button');b.disabled=true;b.textContent='Sending...';
+try{const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{Accept:'application/json'},body:new FormData(f)});if(!(await r.json()).success)throw 0;
+f.outerHTML='<div class="done"><b>Got it.</b> Your preview link will arrive by email within 3 business days.</div>'}catch{b.disabled=false;b.textContent='Get my free preview';f.querySelector('.err').hidden=false}});
+</script>
+</body>
+</html>
