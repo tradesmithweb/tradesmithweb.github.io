@@ -4,64 +4,86 @@
 <meta name="description" content="Roof inspections, repairs and full replacements across the Panhandle. We help you through the insurance claim, start to finish.">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"RoofingContractor","name":"High Plains Roofing","telephone":"(806) 555-0177","description":"Roof inspections, repairs and full replacements across the Panhandle. We help you through the insurance claim, start to finish.","address":{"@type":"PostalAddress","addressLocality":"Amarillo","addressRegion":"TX","addressCountry":"US"},"areaServed":[{"@type":"City","name":"Amarillo"},{"@type":"City","name":"Canyon"},{"@type":"City","name":"Borger"},{"@type":"City","name":"Hereford"},{"@type":"City","name":"Pampa"},{"@type":"City","name":"Dumas"},{"@type":"City","name":"Panhandle"},{"@type":"City","name":"Bushland"}],"openingHours":["Mo-Sa 07:00-19:00"]}</script>
 <style>
 :root{--a:#b45309;--ink:#14171f;--muted:#5b6270;--line:#e6e6e1;--bg:#f8f8f5}
 *{box-sizing:border-box}body{margin:0;font:16.5px/1.6 Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg)}
 h1,h2,h3,.logo{font-family:Archivo,Inter,sans-serif;letter-spacing:-.02em}
 a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
 .banner{background:#14171f;color:#e8e8e8;text-align:center;font-size:.85rem;padding:8px 12px}.banner a{color:#fff;font-weight:600}
+.alert{background:var(--a);color:#fff;text-align:center;font-weight:600;font-size:.95rem;padding:8px 12px}.alert a{text-decoration:underline}
 header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
-.logo{font-weight:800;font-size:1.2rem}.logo small{display:block;font:500 .75rem Inter,sans-serif;color:var(--muted);letter-spacing:0}
-.call{background:var(--a);color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:11px 18px;white-space:nowrap}
-.hero{position:relative;color:#fff;background:#111 center/cover no-repeat url('https://images.unsplash.com/photo-1635424824849-1b09bdcc55b1?auto=format&fit=crop&w=1800&q=70')}
-.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,12,18,.88),rgba(10,12,18,.55) 60%,rgba(10,12,18,.25))}
+.logo{font-weight:800;font-size:1.2rem;line-height:1.2}.logo small{display:block;font:500 .75rem Inter,sans-serif;color:var(--muted);letter-spacing:0}
+.call{display:inline-flex;align-items:center;gap:8px;background:var(--a);color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:12px 18px;white-space:nowrap}
+.hero{position:relative;color:#fff;background:#111 center/cover no-repeat url('https://images.unsplash.com/photo-1635424824849-1b09bdcc55b1?auto=format&fit=crop&w=1400&q=68')}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,12,18,.9),rgba(10,12,18,.6) 60%,rgba(10,12,18,.3))}
 .hero .wrap{position:relative;padding:96px 20px 88px}
 .hero h1{font-size:clamp(2.1rem,5.2vw,3.6rem);line-height:1.05;margin:0 0 16px;max-width:720px}
 .hero p{font-size:1.18rem;max-width:560px;color:#e3e5ea;margin:0 0 28px}
 .btns{display:flex;gap:12px;flex-wrap:wrap}.btn2{border:2px solid #fff;color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:10px 18px}
-.badges{display:flex;gap:10px 22px;flex-wrap:wrap;margin-top:30px;font-size:.95rem;color:#d7dae0}.badges span:before{content:"✓ ";color:#fff;font-weight:700}
+.trust{background:#fff;border-bottom:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:22px 20px}
+.trust .wrap>div{display:flex;gap:12px;align-items:center;font-size:.95rem}.trust b{display:block;font-size:.98rem}.trust span{color:var(--muted);font-size:.85rem}
+.trust i{color:var(--a);flex:0 0 auto}
 section{padding:72px 0}h2{font-size:clamp(1.6rem,3.4vw,2.3rem);margin:0 0 10px}.sub{color:var(--muted);margin:0 0 34px;max-width:640px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
 .card h3{margin:0 0 6px;font-size:1.15rem}.card p{margin:0;color:var(--muted)}
-.ico{width:44px;height:44px;border-radius:12px;background:color-mix(in srgb,var(--a) 12%,#fff);color:var(--a);display:grid;place-items:center;font-size:1.3rem;margin-bottom:14px}
+.ico{width:46px;height:46px;border-radius:12px;background:color-mix(in srgb,var(--a) 12%,#fff);color:var(--a);display:grid;place-items:center;margin-bottom:14px}
 .split{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center}
 .split img{width:100%;border-radius:18px;aspect-ratio:4/3;object-fit:cover}
 ul.why{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:14px}ul.why li{display:flex;gap:12px}ul.why b{display:block}
 ul.why li:before{content:"";flex:0 0 10px;height:10px;margin-top:8px;border-radius:50%;background:var(--a)}
 .area{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .chips{display:flex;flex-wrap:wrap;gap:10px}.chips span{border:1px solid var(--line);border-radius:999px;padding:7px 14px;background:var(--bg)}
-.reviews .card{border-style:dashed;text-align:center;color:var(--muted)}
+.rating{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.stars{font-size:1.6rem;letter-spacing:2px;color:#f5a524}.rating .card{flex:1;min-width:260px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.gallery figure{margin:0;position:relative;border-radius:14px;overflow:hidden}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:24px 14px 10px;color:#fff;font-weight:600;font-size:.92rem;background:linear-gradient(transparent,rgba(0,0,0,.7))}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:28px;padding:44px 20px 20px}.foot b{display:block;color:var(--ink);margin-bottom:8px;font-family:Archivo}.foot a{display:block;text-decoration:none}
 .cta{background:var(--ink);color:#fff;border-radius:22px;padding:48px;display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center}
 .cta p{color:#c4c8d0;margin:0}
 form{display:grid;gap:10px}input,textarea{font:inherit;padding:12px 14px;border-radius:10px;border:1px solid #333a48;background:#1d212b;color:#fff}
-form button{font:inherit;font-weight:700;background:var(--a);color:#fff;border:0;border-radius:10px;padding:13px}
-footer{padding:36px 0 90px;color:var(--muted);font-size:.9rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+form button{font:inherit;font-weight:700;background:var(--a);color:#fff;border:0;border-radius:10px;padding:13px;cursor:pointer}
+.done{background:#1d212b;border-radius:12px;padding:18px}
+footer{background:#fff;border-top:1px solid var(--line);color:var(--muted);font-size:.93rem;padding-bottom:80px}.copy{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:16px 20px;border-top:1px solid var(--line);font-size:.85rem}
 .sticky{display:none}
-@media (max-width:800px){.split,.cta{grid-template-columns:1fr}.cta{padding:30px 22px}.hero .wrap{padding:64px 20px 60px}section{padding:52px 0}header .call{display:none}
+@media (max-width:860px){.grid,.trust .wrap{grid-template-columns:1fr 1fr}.split,.cta{grid-template-columns:1fr}.cta{padding:30px 22px}}
+@media (max-width:600px){.grid,.foot{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.hero .wrap{padding:60px 20px 56px}section{padding:52px 0}header .call{display:none}
 .sticky{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:9;gap:8px;padding:10px;background:#fff;border-top:1px solid var(--line)}
-.sticky a{flex:1;text-align:center;text-decoration:none;font-weight:700;border-radius:10px;padding:13px}.sticky a.c{background:var(--a);color:#fff}.sticky a.q{border:2px solid var(--ink)}}
+.sticky a{flex:1;text-align:center;text-decoration:none;font-weight:700;border-radius:10px;padding:13px 6px}.sticky a.c{background:var(--a);color:#fff}.sticky a.q{border:2px solid var(--ink)}}
 </style></head><body>
 <div class="banner">Sample site, not a real business. Built by <a href="https://tradesmithweb.github.io/">Tradesmith Web</a></div>
+
 <header><div class="wrap"><div class="logo">High Plains Roofing<small>Roof repair and replacement · Amarillo, TX</small></div><a class="call" href="tel:8065550177">Call (806) 555-0177</a></div></header>
 <div class="hero"><div class="wrap">
 <h1>Hail damage? Leaking roof? We'll take a look for free.</h1>
 <p>Roof inspections, repairs and full replacements across the Panhandle. We help you through the insurance claim, start to finish.</p>
 <div class="btns"><a class="call" href="tel:8065550177">Call (806) 555-0177</a><a class="btn2" href="#quote">Get a free quote</a></div>
-<div class="badges"><span>Free inspections</span><span>Insurance claim help</span><span>Workmanship warranty</span></div>
 </div></div>
+<div class="trust"><div class="wrap"><div><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></i><div><b>Free inspections</b><span>Photos and a written report</span></div></div><div><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h4"/></svg></i><div><b>Insurance claim help</b><span>We meet your adjuster</span></div></div><div><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></i><div><b>Workmanship warranty</b><span>10 years on our labor</span></div></div><div><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg></i><div><b>Local crew</b><span>Panhandle based since 2011</span></div></div></div></div>
 <main>
 <section><div class="wrap"><h2>What we do</h2><p class="sub">Shingle, metal or flat, residential or commercial.</p>
-<div class="grid"><div class="card"><div class="ico">🏠</div><h3>Roof replacement</h3><p>Tear-off and new roof, usually done in a day or two.</p></div><div class="card"><div class="ico">🌩️</div><h3>Storm and hail damage</h3><p>Inspection, photos and documentation for your insurer.</p></div><div class="card"><div class="ico">🔧</div><h3>Leak repair</h3><p>Find the source, fix it, and stop the stains on your ceiling.</p></div><div class="card"><div class="ico">🔩</div><h3>Metal roofing</h3><p>Long-lasting metal roofs for homes, barns and shops.</p></div><div class="card"><div class="ico">🧱</div><h3>Gutters</h3><p>Seamless gutters and guards installed and repaired.</p></div><div class="card"><div class="ico">📋</div><h3>Free inspections</h3><p>A clear report with photos, so you know exactly what you need.</p></div></div></div></section>
-<section style="padding-top:0"><div class="wrap split"><div><h2>Why Amarillo calls us</h2><ul class="why"><li><div><b>Free, honest inspections</b>If your roof doesn't need replacing, we'll tell you.</div></li><li><div><b>Insurance help</b>We meet the adjuster and handle the paperwork with you.</div></li><li><div><b>Clean job sites</b>Magnetic sweep for nails and full cleanup every day.</div></li></ul></div>
-<img src="https://images.unsplash.com/photo-1726589004565-bedfba94d3a2?auto=format&fit=crop&w=1000&q=70" alt="Roofer working on a roof" loading="lazy"></div></section>
-<section class="area"><div class="wrap"><h2>Areas we serve</h2><p class="sub">Based in Amarillo, TX, serving these communities and everything in between.</p><div class="chips"><span>Amarillo</span><span>Canyon</span><span>Borger</span><span>Hereford</span><span>Pampa</span><span>Dumas</span><span>Panhandle</span><span>Bushland</span></div></div></section>
-<section class="reviews"><div class="wrap"><h2>What customers say</h2><div class="card">Your real Google reviews appear here.</div></div></section>
-<section id="quote"><div class="wrap"><div class="cta"><div><h2>Need it fixed? Get a free quote.</h2><p>Call or text (806) 555-0177, or send the form. We reply the same day.</p></div>
-<form onsubmit="event.preventDefault();this.innerHTML='<p>Thanks! We will call you back shortly.</p>'"><input placeholder="Your name" required><input placeholder="Phone number" required><textarea rows="3" placeholder="What do you need done?"></textarea><button>Request a quote</button></form></div></div></section>
+<div class="grid"><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg></div><h3>Roof replacement</h3><p>Tear-off and new roof, usually done in a day or two.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 16a4 4 0 0 1 0-8 5 5 0 0 1 9.6-1.5A3.5 3.5 0 0 1 17 16"/><path d="M12 13l-2 4h3l-2 4"/></svg></div><h3>Storm and hail damage</h3><p>Inspection, photos and documentation for your insurer.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></div><h3>Leak repair</h3><p>Find the source, fix it, and stop the stains on your ceiling.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></div><h3>Metal roofing</h3><p>Long-lasting metal roofs for homes, barns and shops.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h7a3 3 0 0 1 3 3v10M4 4v6M10 20h8"/></svg></div><h3>Gutters</h3><p>Seamless gutters and guards installed and repaired.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></div><h3>Free inspections</h3><p>A clear report with photos, so you know exactly what you need.</p></div></div></div></section>
+<section style="padding-top:0"><div class="wrap split"><div><h2>Why Amarillo calls us</h2><ul class="why"><li><div><b>Honest inspections</b>If your roof doesn't need replacing, we'll tell you.</div></li><li><div><b>Insurance help</b>We meet the adjuster and handle the paperwork with you.</div></li><li><div><b>Clean job sites</b>Magnetic sweep for nails and full cleanup every day.</div></li></ul></div>
+<img src="https://images.unsplash.com/photo-1726589004565-bedfba94d3a2?auto=format&fit=crop&w=1000&q=68" alt="Roofer working on a roof" loading="lazy"></div></section>
+<section class="area"><div class="wrap"><h2>Areas we serve</h2><p class="sub">Based in Amarillo, serving these communities and everything in between.</p><div class="chips"><span>Amarillo</span><span>Canyon</span><span>Borger</span><span>Hereford</span><span>Pampa</span><span>Dumas</span><span>Panhandle</span><span>Bushland</span></div></div></section>
+
+<section style="padding-top:0"><div class="wrap"><h2>Recent work</h2><p class="sub">A few recent jobs around Amarillo.</p><div class="gallery"><figure><img src="https://images.unsplash.com/photo-1635424709961-f3a150459ad4?auto=format&fit=crop&w=700&q=68" alt="Full replacement, Canyon" loading="lazy"><figcaption>Full replacement, Canyon</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1755114203680-d39d95efa82c?auto=format&fit=crop&w=700&q=68" alt="Hail claim roof, Amarillo" loading="lazy"><figcaption>Hail claim roof, Amarillo</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1763665814538-8ba04597286c?auto=format&fit=crop&w=700&q=68" alt="New build roof, Hereford" loading="lazy"><figcaption>New build roof, Hereford</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1710139323182-69622cad5c3b?auto=format&fit=crop&w=700&q=68" alt="Shingle upgrade, Pampa" loading="lazy"><figcaption>Shingle upgrade, Pampa</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1635424709870-cdc6e64f0e20?auto=format&fit=crop&w=700&q=68" alt="Storm repair, Borger" loading="lazy"><figcaption>Storm repair, Borger</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1590365876016-da05ac533e83?auto=format&fit=crop&w=700&q=68" alt="Re-roof, Bushland" loading="lazy"><figcaption>Re-roof, Bushland</figcaption></figure></div></div></section>
+<section id="quote"><div class="wrap"><div class="cta"><div><h2>Need it fixed? Get a free quote.</h2><p>Call (806) 555-0177 or send the form. We'll set up your free inspection within 2 days.</p></div>
+<form id="qf"><input type="hidden" name="access_key" value="e62425fa-aae5-42e2-921f-4ee268a73d63"><input type="hidden" name="subject" value="New quote request: High Plains Roofing"><input type="checkbox" name="botcheck" style="display:none">
+<input name="name" placeholder="Your name" autocomplete="name" required><input name="phone" type="tel" placeholder="Phone number" autocomplete="tel" required><textarea name="message" rows="3" placeholder="What do you need done?"></textarea><button>Request a quote</button></form></div></div></section>
 </main>
-<footer><div class="wrap"><span>© 2026 High Plains Roofing · Amarillo, TX</span><span>Photos: Unsplash</span></div></footer>
-<div class="sticky"><a class="c" href="tel:8065550177">Call now</a><a class="q" href="#quote">Free quote</a></div>
+<footer><div class="wrap foot"><div><b>High Plains Roofing</b>Roof repair and replacement in Amarillo, TX<a href="tel:8065550177" style="margin-top:8px;color:var(--ink);font-weight:600">(806) 555-0177</a></div>
+<div><b>Hours</b>Mon to Sat: 7am to 7pm<br>Storm season: 7 days</div>
+<div><b>Services</b><a href="#quote">Roof replacement</a><a href="#quote">Storm and hail damage</a><a href="#quote">Leak repair</a><a href="#quote">Metal roofing</a><a href="#quote">Gutters</a></div></div>
+<div class="wrap copy"><span>© 2026 High Plains Roofing</span><span>Photos: Unsplash</span></div></footer>
+<div class="sticky"><a class="c" href="tel:8065550177">Call</a><a class="q" href="sms:8065550177">Text</a><a class="q" href="#quote">Quote</a></div>
+<script>
+document.getElementById('qf').addEventListener('submit',async e=>{e.preventDefault();const f=e.target,btn=f.querySelector('button');btn.disabled=true;btn.textContent='Sending...';
+try{const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{Accept:'application/json'},body:new FormData(f)});const j=await r.json();
+if(!j.success)throw 0;f.outerHTML='<div class="done">This is a sample site. On your real site, this message goes straight to your email.</div>'}catch{btn.disabled=false;btn.textContent='Could not send. Please call instead.'}});
+</script>
 </body></html>

@@ -4,64 +4,86 @@
 <meta name="description" content="Panel upgrades, EV chargers, lighting and troubleshooting by licensed electricians who show up on time.">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Electrician","name":"Brightline Electric","telephone":"(713) 555-0118","description":"Panel upgrades, EV chargers, lighting and troubleshooting by licensed electricians who show up on time.","address":{"@type":"PostalAddress","addressLocality":"Houston","addressRegion":"TX","addressCountry":"US"},"areaServed":[{"@type":"City","name":"Houston"},{"@type":"City","name":"Katy"},{"@type":"City","name":"Sugar Land"},{"@type":"City","name":"Pearland"},{"@type":"City","name":"The Woodlands"},{"@type":"City","name":"Cypress"},{"@type":"City","name":"Pasadena"},{"@type":"City","name":"Spring"}],"openingHours":["Mo-Fr 07:00-17:00"]}</script>
 <style>
-:root{--a:#ca8a04;--ink:#14171f;--muted:#5b6270;--line:#e6e6e1;--bg:#f8f8f5}
+:root{--a:#a16207;--ink:#14171f;--muted:#5b6270;--line:#e6e6e1;--bg:#f8f8f5}
 *{box-sizing:border-box}body{margin:0;font:16.5px/1.6 Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg)}
 h1,h2,h3,.logo{font-family:Archivo,Inter,sans-serif;letter-spacing:-.02em}
 a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
 .banner{background:#14171f;color:#e8e8e8;text-align:center;font-size:.85rem;padding:8px 12px}.banner a{color:#fff;font-weight:600}
+.alert{background:var(--a);color:#fff;text-align:center;font-weight:600;font-size:.95rem;padding:8px 12px}.alert a{text-decoration:underline}
 header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
-.logo{font-weight:800;font-size:1.2rem}.logo small{display:block;font:500 .75rem Inter,sans-serif;color:var(--muted);letter-spacing:0}
-.call{background:var(--a);color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:11px 18px;white-space:nowrap}
-.hero{position:relative;color:#fff;background:#111 center/cover no-repeat url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1800&q=70')}
-.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,12,18,.88),rgba(10,12,18,.55) 60%,rgba(10,12,18,.25))}
+.logo{font-weight:800;font-size:1.2rem;line-height:1.2}.logo small{display:block;font:500 .75rem Inter,sans-serif;color:var(--muted);letter-spacing:0}
+.call{display:inline-flex;align-items:center;gap:8px;background:var(--a);color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:12px 18px;white-space:nowrap}
+.hero{position:relative;color:#fff;background:#111 center/cover no-repeat url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1400&q=68')}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,12,18,.9),rgba(10,12,18,.6) 60%,rgba(10,12,18,.3))}
 .hero .wrap{position:relative;padding:96px 20px 88px}
 .hero h1{font-size:clamp(2.1rem,5.2vw,3.6rem);line-height:1.05;margin:0 0 16px;max-width:720px}
 .hero p{font-size:1.18rem;max-width:560px;color:#e3e5ea;margin:0 0 28px}
 .btns{display:flex;gap:12px;flex-wrap:wrap}.btn2{border:2px solid #fff;color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:10px 18px}
-.badges{display:flex;gap:10px 22px;flex-wrap:wrap;margin-top:30px;font-size:.95rem;color:#d7dae0}.badges span:before{content:"✓ ";color:#fff;font-weight:700}
+.trust{background:#fff;border-bottom:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:22px 20px}
+.trust .wrap>div{display:flex;gap:12px;align-items:center;font-size:.95rem}.trust b{display:block;font-size:.98rem}.trust span{color:var(--muted);font-size:.85rem}
+.trust i{color:var(--a);flex:0 0 auto}
 section{padding:72px 0}h2{font-size:clamp(1.6rem,3.4vw,2.3rem);margin:0 0 10px}.sub{color:var(--muted);margin:0 0 34px;max-width:640px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
 .card h3{margin:0 0 6px;font-size:1.15rem}.card p{margin:0;color:var(--muted)}
-.ico{width:44px;height:44px;border-radius:12px;background:color-mix(in srgb,var(--a) 12%,#fff);color:var(--a);display:grid;place-items:center;font-size:1.3rem;margin-bottom:14px}
+.ico{width:46px;height:46px;border-radius:12px;background:color-mix(in srgb,var(--a) 12%,#fff);color:var(--a);display:grid;place-items:center;margin-bottom:14px}
 .split{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center}
 .split img{width:100%;border-radius:18px;aspect-ratio:4/3;object-fit:cover}
 ul.why{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:14px}ul.why li{display:flex;gap:12px}ul.why b{display:block}
 ul.why li:before{content:"";flex:0 0 10px;height:10px;margin-top:8px;border-radius:50%;background:var(--a)}
 .area{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .chips{display:flex;flex-wrap:wrap;gap:10px}.chips span{border:1px solid var(--line);border-radius:999px;padding:7px 14px;background:var(--bg)}
-.reviews .card{border-style:dashed;text-align:center;color:var(--muted)}
+.rating{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.stars{font-size:1.6rem;letter-spacing:2px;color:#f5a524}.rating .card{flex:1;min-width:260px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.gallery figure{margin:0;position:relative;border-radius:14px;overflow:hidden}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:24px 14px 10px;color:#fff;font-weight:600;font-size:.92rem;background:linear-gradient(transparent,rgba(0,0,0,.7))}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:28px;padding:44px 20px 20px}.foot b{display:block;color:var(--ink);margin-bottom:8px;font-family:Archivo}.foot a{display:block;text-decoration:none}
 .cta{background:var(--ink);color:#fff;border-radius:22px;padding:48px;display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center}
 .cta p{color:#c4c8d0;margin:0}
 form{display:grid;gap:10px}input,textarea{font:inherit;padding:12px 14px;border-radius:10px;border:1px solid #333a48;background:#1d212b;color:#fff}
-form button{font:inherit;font-weight:700;background:var(--a);color:#fff;border:0;border-radius:10px;padding:13px}
-footer{padding:36px 0 90px;color:var(--muted);font-size:.9rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+form button{font:inherit;font-weight:700;background:var(--a);color:#fff;border:0;border-radius:10px;padding:13px;cursor:pointer}
+.done{background:#1d212b;border-radius:12px;padding:18px}
+footer{background:#fff;border-top:1px solid var(--line);color:var(--muted);font-size:.93rem;padding-bottom:80px}.copy{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:16px 20px;border-top:1px solid var(--line);font-size:.85rem}
 .sticky{display:none}
-@media (max-width:800px){.split,.cta{grid-template-columns:1fr}.cta{padding:30px 22px}.hero .wrap{padding:64px 20px 60px}section{padding:52px 0}header .call{display:none}
+@media (max-width:860px){.grid,.trust .wrap{grid-template-columns:1fr 1fr}.split,.cta{grid-template-columns:1fr}.cta{padding:30px 22px}}
+@media (max-width:600px){.grid,.foot{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.hero .wrap{padding:60px 20px 56px}section{padding:52px 0}header .call{display:none}
 .sticky{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:9;gap:8px;padding:10px;background:#fff;border-top:1px solid var(--line)}
-.sticky a{flex:1;text-align:center;text-decoration:none;font-weight:700;border-radius:10px;padding:13px}.sticky a.c{background:var(--a);color:#fff}.sticky a.q{border:2px solid var(--ink)}}
+.sticky a{flex:1;text-align:center;text-decoration:none;font-weight:700;border-radius:10px;padding:13px 6px}.sticky a.c{background:var(--a);color:#fff}.sticky a.q{border:2px solid var(--ink)}}
 </style></head><body>
 <div class="banner">Sample site, not a real business. Built by <a href="https://tradesmithweb.github.io/">Tradesmith Web</a></div>
+<div class="alert">Power out or burning smell? Call now: <a href="tel:7135550118">(713) 555-0118</a></div>
 <header><div class="wrap"><div class="logo">Brightline Electric<small>Residential and commercial electricians · Houston, TX</small></div><a class="call" href="tel:7135550118">Call (713) 555-0118</a></div></header>
 <div class="hero"><div class="wrap">
 <h1>Safe, code-compliant electrical work in Houston.</h1>
 <p>Panel upgrades, EV chargers, lighting and troubleshooting by licensed electricians who show up on time.</p>
 <div class="btns"><a class="call" href="tel:7135550118">Call (713) 555-0118</a><a class="btn2" href="#quote">Get a free quote</a></div>
-<div class="badges"><span>Licensed master electrician</span><span>On-time arrival</span><span>Free estimates</span></div>
 </div></div>
+<div class="trust"><div class="wrap"><div><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></i><div><b>Master electrician</b><span>TX license #00000 (sample)</span></div></div><div><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></i><div><b>On-time arrival</b><span>2-hour arrival window</span></div></div><div><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h4"/></svg></i><div><b>Written quotes</b><span>Free estimates</span></div></div><div><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></i><div><b>Permitted work</b><span>Done to code, every job</span></div></div></div></div>
 <main>
 <section><div class="wrap"><h2>What we do</h2><p class="sub">Everything from a dead outlet to a full panel upgrade.</p>
-<div class="grid"><div class="card"><div class="ico">⚡</div><h3>Panel upgrades</h3><p>Old or overloaded panels replaced and brought up to code.</p></div><div class="card"><div class="ico">🔌</div><h3>EV chargers</h3><p>Level 2 charger installs for every major brand.</p></div><div class="card"><div class="ico">💡</div><h3>Lighting</h3><p>Recessed, outdoor and landscape lighting installed cleanly.</p></div><div class="card"><div class="ico">🧯</div><h3>Troubleshooting</h3><p>Flickering lights or breakers tripping? We find the cause.</p></div><div class="card"><div class="ico">🔋</div><h3>Generators</h3><p>Standby generators and transfer switches for storm season.</p></div><div class="card"><div class="ico">🏢</div><h3>Commercial</h3><p>Tenant build-outs, service upgrades and maintenance.</p></div></div></div></section>
+<div class="grid"><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div><h3>Panel upgrades</h3><p>Old or overloaded panels replaced and brought up to code.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v6M15 2v6M6 8h12v4a6 6 0 0 1-12 0zM12 18v4"/></svg></div><h3>EV chargers</h3><p>Level 2 charger installs for every major brand.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg></div><h3>Lighting</h3><p>Recessed, outdoor and landscape lighting.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></div><h3>Troubleshooting</h3><p>Flickering lights or breakers tripping? We find the cause.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="16" height="10" rx="2"/><path d="M21 11v2M7 10v4M11 10v4"/></svg></div><h3>Generators</h3><p>Standby generators and transfer switches for storm season.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></div><h3>Commercial</h3><p>Tenant build-outs, service upgrades and maintenance.</p></div></div></div></section>
 <section style="padding-top:0"><div class="wrap split"><div><h2>Why Houston calls us</h2><ul class="why"><li><div><b>Licensed and insured</b>Every job permitted and done to code.</div></li><li><div><b>On time</b>We give you a window and we keep it.</div></li><li><div><b>Clear quotes</b>A written price before any work starts.</div></li></ul></div>
-<img src="https://images.unsplash.com/photo-1758101755915-462eddc23f57?auto=format&fit=crop&w=1000&q=70" alt="Electrician testing an electrical panel" loading="lazy"></div></section>
-<section class="area"><div class="wrap"><h2>Areas we serve</h2><p class="sub">Based in Houston, TX, serving these communities and everything in between.</p><div class="chips"><span>Houston</span><span>Katy</span><span>Sugar Land</span><span>Pearland</span><span>The Woodlands</span><span>Cypress</span><span>Pasadena</span><span>Spring</span></div></div></section>
-<section class="reviews"><div class="wrap"><h2>What customers say</h2><div class="card">Your real Google reviews appear here.</div></div></section>
-<section id="quote"><div class="wrap"><div class="cta"><div><h2>Need it fixed? Get a free quote.</h2><p>Call or text (713) 555-0118, or send the form. We reply the same day.</p></div>
-<form onsubmit="event.preventDefault();this.innerHTML='<p>Thanks! We will call you back shortly.</p>'"><input placeholder="Your name" required><input placeholder="Phone number" required><textarea rows="3" placeholder="What do you need done?"></textarea><button>Request a quote</button></form></div></div></section>
+<img src="https://images.unsplash.com/photo-1758101755915-462eddc23f57?auto=format&fit=crop&w=1000&q=68" alt="Electrician testing an electrical panel" loading="lazy"></div></section>
+<section class="area"><div class="wrap"><h2>Areas we serve</h2><p class="sub">Based in Houston, serving these communities and everything in between.</p><div class="chips"><span>Houston</span><span>Katy</span><span>Sugar Land</span><span>Pearland</span><span>The Woodlands</span><span>Cypress</span><span>Pasadena</span><span>Spring</span></div></div></section>
+
+<section style="padding-top:0"><div class="wrap"><h2>Recent work</h2><p class="sub">A few recent jobs around Houston.</p><div class="gallery"><figure><img src="https://images.unsplash.com/photo-1660330589693-99889d60181e?auto=format&fit=crop&w=700&q=68" alt="Panel upgrade, Katy" loading="lazy"><figcaption>Panel upgrade, Katy</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1682888813913-e13f18692019?auto=format&fit=crop&w=700&q=68" alt="Kitchen lighting, Sugar Land" loading="lazy"><figcaption>Kitchen lighting, Sugar Land</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1576446470246-499c738d1c8e?auto=format&fit=crop&w=700&q=68" alt="New breakers, Pearland" loading="lazy"><figcaption>New breakers, Pearland</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1684928365167-e91916573122?auto=format&fit=crop&w=700&q=68" alt="Recessed lights, The Woodlands" loading="lazy"><figcaption>Recessed lights, The Woodlands</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1635335874521-7987db781153?auto=format&fit=crop&w=700&q=68" alt="Rewire, Houston" loading="lazy"><figcaption>Rewire, Houston</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1649083048428-3d8ed23a3ce0?auto=format&fit=crop&w=700&q=68" alt="Pendant install, Cypress" loading="lazy"><figcaption>Pendant install, Cypress</figcaption></figure></div></div></section>
+<section id="quote"><div class="wrap"><div class="cta"><div><h2>Need it fixed? Get a free quote.</h2><p>Call (713) 555-0118 or send the form. We reply the same business day.</p></div>
+<form id="qf"><input type="hidden" name="access_key" value="e62425fa-aae5-42e2-921f-4ee268a73d63"><input type="hidden" name="subject" value="New quote request: Brightline Electric"><input type="checkbox" name="botcheck" style="display:none">
+<input name="name" placeholder="Your name" autocomplete="name" required><input name="phone" type="tel" placeholder="Phone number" autocomplete="tel" required><textarea name="message" rows="3" placeholder="What do you need done?"></textarea><button>Request a quote</button></form></div></div></section>
 </main>
-<footer><div class="wrap"><span>© 2026 Brightline Electric · Houston, TX</span><span>Photos: Unsplash</span></div></footer>
-<div class="sticky"><a class="c" href="tel:7135550118">Call now</a><a class="q" href="#quote">Free quote</a></div>
+<footer><div class="wrap foot"><div><b>Brightline Electric</b>Residential and commercial electricians in Houston, TX<a href="tel:7135550118" style="margin-top:8px;color:var(--ink);font-weight:600">(713) 555-0118</a></div>
+<div><b>Hours</b>Mon to Fri: 7am to 5pm<br>Sat: by appointment<br>Emergencies: 24/7</div>
+<div><b>Services</b><a href="#quote">Panel upgrades</a><a href="#quote">EV chargers</a><a href="#quote">Lighting</a><a href="#quote">Troubleshooting</a><a href="#quote">Generators</a></div></div>
+<div class="wrap copy"><span>© 2026 Brightline Electric</span><span>Photos: Unsplash</span></div></footer>
+<div class="sticky"><a class="c" href="tel:7135550118">Call</a><a class="q" href="sms:7135550118">Text</a><a class="q" href="#quote">Quote</a></div>
+<script>
+document.getElementById('qf').addEventListener('submit',async e=>{e.preventDefault();const f=e.target,btn=f.querySelector('button');btn.disabled=true;btn.textContent='Sending...';
+try{const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{Accept:'application/json'},body:new FormData(f)});const j=await r.json();
+if(!j.success)throw 0;f.outerHTML='<div class="done">This is a sample site. On your real site, this message goes straight to your email.</div>'}catch{btn.disabled=false;btn.textContent='Could not send. Please call instead.'}});
+</script>
 </body></html>

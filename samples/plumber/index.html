@@ -4,64 +4,86 @@
 <meta name="description" content="Family-run plumbing for Austin homes and businesses. Upfront prices, clean work, and a real person on the phone.">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Plumber","name":"Lone Star Plumbing Co.","telephone":"(512) 555-0142","description":"Family-run plumbing for Austin homes and businesses. Upfront prices, clean work, and a real person on the phone.","address":{"@type":"PostalAddress","addressLocality":"Austin","addressRegion":"TX","addressCountry":"US"},"areaServed":[{"@type":"City","name":"Austin"},{"@type":"City","name":"Round Rock"},{"@type":"City","name":"Cedar Park"},{"@type":"City","name":"Pflugerville"},{"@type":"City","name":"Georgetown"},{"@type":"City","name":"Leander"},{"@type":"City","name":"Lakeway"},{"@type":"City","name":"Buda"}],"openingHours":["Mo-Fr 07:00-18:00","Sa 08:00-14:00"]}</script>
 <style>
 :root{--a:#0e6ba8;--ink:#14171f;--muted:#5b6270;--line:#e6e6e1;--bg:#f8f8f5}
 *{box-sizing:border-box}body{margin:0;font:16.5px/1.6 Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg)}
 h1,h2,h3,.logo{font-family:Archivo,Inter,sans-serif;letter-spacing:-.02em}
 a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
 .banner{background:#14171f;color:#e8e8e8;text-align:center;font-size:.85rem;padding:8px 12px}.banner a{color:#fff;font-weight:600}
+.alert{background:var(--a);color:#fff;text-align:center;font-weight:600;font-size:.95rem;padding:8px 12px}.alert a{text-decoration:underline}
 header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
-.logo{font-weight:800;font-size:1.2rem}.logo small{display:block;font:500 .75rem Inter,sans-serif;color:var(--muted);letter-spacing:0}
-.call{background:var(--a);color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:11px 18px;white-space:nowrap}
-.hero{position:relative;color:#fff;background:#111 center/cover no-repeat url('https://images.unsplash.com/photo-1676210134190-3f2c0d5cf58d?auto=format&fit=crop&w=1800&q=70')}
-.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,12,18,.88),rgba(10,12,18,.55) 60%,rgba(10,12,18,.25))}
+.logo{font-weight:800;font-size:1.2rem;line-height:1.2}.logo small{display:block;font:500 .75rem Inter,sans-serif;color:var(--muted);letter-spacing:0}
+.call{display:inline-flex;align-items:center;gap:8px;background:var(--a);color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:12px 18px;white-space:nowrap}
+.hero{position:relative;color:#fff;background:#111 center/cover no-repeat url('https://images.unsplash.com/photo-1676210134188-4c05dd172f89?auto=format&fit=crop&w=1400&q=68')}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,12,18,.9),rgba(10,12,18,.6) 60%,rgba(10,12,18,.3))}
 .hero .wrap{position:relative;padding:96px 20px 88px}
 .hero h1{font-size:clamp(2.1rem,5.2vw,3.6rem);line-height:1.05;margin:0 0 16px;max-width:720px}
 .hero p{font-size:1.18rem;max-width:560px;color:#e3e5ea;margin:0 0 28px}
 .btns{display:flex;gap:12px;flex-wrap:wrap}.btn2{border:2px solid #fff;color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:10px 18px}
-.badges{display:flex;gap:10px 22px;flex-wrap:wrap;margin-top:30px;font-size:.95rem;color:#d7dae0}.badges span:before{content:"✓ ";color:#fff;font-weight:700}
+.trust{background:#fff;border-bottom:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:22px 20px}
+.trust .wrap>div{display:flex;gap:12px;align-items:center;font-size:.95rem}.trust b{display:block;font-size:.98rem}.trust span{color:var(--muted);font-size:.85rem}
+.trust i{color:var(--a);flex:0 0 auto}
 section{padding:72px 0}h2{font-size:clamp(1.6rem,3.4vw,2.3rem);margin:0 0 10px}.sub{color:var(--muted);margin:0 0 34px;max-width:640px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
 .card h3{margin:0 0 6px;font-size:1.15rem}.card p{margin:0;color:var(--muted)}
-.ico{width:44px;height:44px;border-radius:12px;background:color-mix(in srgb,var(--a) 12%,#fff);color:var(--a);display:grid;place-items:center;font-size:1.3rem;margin-bottom:14px}
+.ico{width:46px;height:46px;border-radius:12px;background:color-mix(in srgb,var(--a) 12%,#fff);color:var(--a);display:grid;place-items:center;margin-bottom:14px}
 .split{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center}
 .split img{width:100%;border-radius:18px;aspect-ratio:4/3;object-fit:cover}
 ul.why{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:14px}ul.why li{display:flex;gap:12px}ul.why b{display:block}
 ul.why li:before{content:"";flex:0 0 10px;height:10px;margin-top:8px;border-radius:50%;background:var(--a)}
 .area{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .chips{display:flex;flex-wrap:wrap;gap:10px}.chips span{border:1px solid var(--line);border-radius:999px;padding:7px 14px;background:var(--bg)}
-.reviews .card{border-style:dashed;text-align:center;color:var(--muted)}
+.rating{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.stars{font-size:1.6rem;letter-spacing:2px;color:#f5a524}.rating .card{flex:1;min-width:260px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.gallery figure{margin:0;position:relative;border-radius:14px;overflow:hidden}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:24px 14px 10px;color:#fff;font-weight:600;font-size:.92rem;background:linear-gradient(transparent,rgba(0,0,0,.7))}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:28px;padding:44px 20px 20px}.foot b{display:block;color:var(--ink);margin-bottom:8px;font-family:Archivo}.foot a{display:block;text-decoration:none}
 .cta{background:var(--ink);color:#fff;border-radius:22px;padding:48px;display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center}
 .cta p{color:#c4c8d0;margin:0}
 form{display:grid;gap:10px}input,textarea{font:inherit;padding:12px 14px;border-radius:10px;border:1px solid #333a48;background:#1d212b;color:#fff}
-form button{font:inherit;font-weight:700;background:var(--a);color:#fff;border:0;border-radius:10px;padding:13px}
-footer{padding:36px 0 90px;color:var(--muted);font-size:.9rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+form button{font:inherit;font-weight:700;background:var(--a);color:#fff;border:0;border-radius:10px;padding:13px;cursor:pointer}
+.done{background:#1d212b;border-radius:12px;padding:18px}
+footer{background:#fff;border-top:1px solid var(--line);color:var(--muted);font-size:.93rem;padding-bottom:80px}.copy{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:16px 20px;border-top:1px solid var(--line);font-size:.85rem}
 .sticky{display:none}
-@media (max-width:800px){.split,.cta{grid-template-columns:1fr}.cta{padding:30px 22px}.hero .wrap{padding:64px 20px 60px}section{padding:52px 0}header .call{display:none}
+@media (max-width:860px){.grid,.trust .wrap{grid-template-columns:1fr 1fr}.split,.cta{grid-template-columns:1fr}.cta{padding:30px 22px}}
+@media (max-width:600px){.grid,.foot{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.hero .wrap{padding:60px 20px 56px}section{padding:52px 0}header .call{display:none}
 .sticky{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:9;gap:8px;padding:10px;background:#fff;border-top:1px solid var(--line)}
-.sticky a{flex:1;text-align:center;text-decoration:none;font-weight:700;border-radius:10px;padding:13px}.sticky a.c{background:var(--a);color:#fff}.sticky a.q{border:2px solid var(--ink)}}
+.sticky a{flex:1;text-align:center;text-decoration:none;font-weight:700;border-radius:10px;padding:13px 6px}.sticky a.c{background:var(--a);color:#fff}.sticky a.q{border:2px solid var(--ink)}}
 </style></head><body>
 <div class="banner">Sample site, not a real business. Built by <a href="https://tradesmithweb.github.io/">Tradesmith Web</a></div>
+<div class="alert">Burst pipe or no water? We answer 24/7: <a href="tel:5125550142">(512) 555-0142</a></div>
 <header><div class="wrap"><div class="logo">Lone Star Plumbing Co.<small>Licensed plumbers · Austin, TX</small></div><a class="call" href="tel:5125550142">Call (512) 555-0142</a></div></header>
 <div class="hero"><div class="wrap">
 <h1>Leaks, clogs and water heaters fixed today.</h1>
 <p>Family-run plumbing for Austin homes and businesses. Upfront prices, clean work, and a real person on the phone.</p>
 <div class="btns"><a class="call" href="tel:5125550142">Call (512) 555-0142</a><a class="btn2" href="#quote">Get a free quote</a></div>
-<div class="badges"><span>Licensed and insured</span><span>Same-day service</span><span>Upfront pricing</span></div>
 </div></div>
+<div class="trust"><div class="wrap"><div><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></i><div><b>Licensed and insured</b><span>TX license #M-00000 (sample)</span></div></div><div><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></i><div><b>24/7 emergencies</b><span>Nights and weekends</span></div></div><div><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h4"/></svg></i><div><b>Upfront pricing</b><span>Price before we start</span></div></div><div><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg></i><div><b>Family owned</b><span>Serving Austin since 2009</span></div></div></div></div>
 <main>
 <section><div class="wrap"><h2>What we do</h2><p class="sub">From a dripping faucet to a full repipe, one call covers it.</p>
-<div class="grid"><div class="card"><div class="ico">💧</div><h3>Leak repair</h3><p>Find and fix leaks fast, before they turn into water damage.</p></div><div class="card"><div class="ico">🚿</div><h3>Drain cleaning</h3><p>Kitchen, bath and main line clogs cleared with the right tools.</p></div><div class="card"><div class="ico">🔥</div><h3>Water heaters</h3><p>Repair and replacement, tank and tankless, often the same day.</p></div><div class="card"><div class="ico">🛠️</div><h3>Repiping</h3><p>Old galvanized or failing pipes replaced with minimal mess.</p></div><div class="card"><div class="ico">🚽</div><h3>Fixtures</h3><p>Toilets, faucets, disposals and sinks installed right.</p></div><div class="card"><div class="ico">⏱️</div><h3>Emergency calls</h3><p>Burst pipe at night? Call and we'll tell you what to do right now.</p></div></div></div></section>
+<div class="grid"><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></div><h3>Leak repair</h3><p>Find and fix leaks fast, before they turn into water damage.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></div><h3>Drain cleaning</h3><p>Kitchen, bath and main line clogs cleared with a camera and the right tools.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1 4 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3-1-5 1-8.5z"/></svg></div><h3>Water heaters</h3><p>Repair and replacement, tank and tankless, often the same day.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h7a3 3 0 0 1 3 3v10M4 4v6M10 20h8"/></svg></div><h3>Repiping</h3><p>Old galvanized or failing pipes replaced with minimal mess.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg></div><h3>Fixtures</h3><p>Toilets, faucets, disposals and sinks installed right.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Emergency calls</h3><p>Burst pipe at night? Call and we'll tell you what to do right now.</p></div></div></div></section>
 <section style="padding-top:0"><div class="wrap split"><div><h2>Why Austin calls us</h2><ul class="why"><li><div><b>Upfront prices</b>You get the price before we start. No surprises on the bill.</div></li><li><div><b>We clean up</b>Shoe covers, drop cloths, and we leave it like we found it.</div></li><li><div><b>Local</b>We live and work in Austin. You'll see the same faces next time.</div></li></ul></div>
-<img src="https://images.unsplash.com/photo-1676210134188-4c05dd172f89?auto=format&fit=crop&w=1000&q=70" alt="Plumber working on a pipe" loading="lazy"></div></section>
-<section class="area"><div class="wrap"><h2>Areas we serve</h2><p class="sub">Based in Austin, TX, serving these communities and everything in between.</p><div class="chips"><span>Austin</span><span>Round Rock</span><span>Cedar Park</span><span>Pflugerville</span><span>Georgetown</span><span>Leander</span><span>Lakeway</span><span>Buda</span></div></div></section>
-<section class="reviews"><div class="wrap"><h2>What customers say</h2><div class="card">Your real Google reviews appear here.</div></div></section>
-<section id="quote"><div class="wrap"><div class="cta"><div><h2>Need it fixed? Get a free quote.</h2><p>Call or text (512) 555-0142, or send the form. We reply the same day.</p></div>
-<form onsubmit="event.preventDefault();this.innerHTML='<p>Thanks! We will call you back shortly.</p>'"><input placeholder="Your name" required><input placeholder="Phone number" required><textarea rows="3" placeholder="What do you need done?"></textarea><button>Request a quote</button></form></div></div></section>
+<img src="https://images.unsplash.com/photo-1676210134190-3f2c0d5cf58d?auto=format&fit=crop&w=1000&q=68" alt="Plumber fixing a water heater" loading="lazy"></div></section>
+<section class="area"><div class="wrap"><h2>Areas we serve</h2><p class="sub">Based in Austin, serving these communities and everything in between.</p><div class="chips"><span>Austin</span><span>Round Rock</span><span>Cedar Park</span><span>Pflugerville</span><span>Georgetown</span><span>Leander</span><span>Lakeway</span><span>Buda</span></div></div></section>
+
+<section style="padding-top:0"><div class="wrap"><h2>Recent work</h2><p class="sub">A few recent jobs around Austin.</p><div class="gallery"><figure><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=700&q=68" alt="Bathroom remodel, Round Rock" loading="lazy"><figcaption>Bathroom remodel, Round Rock</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1676210134190-3f2c0d5cf58d?auto=format&fit=crop&w=700&q=68" alt="Water heater swap, Austin" loading="lazy"><figcaption>Water heater swap, Austin</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1650551182991-b07558247564?auto=format&fit=crop&w=700&q=68" alt="Valve replacement, Cedar Park" loading="lazy"><figcaption>Valve replacement, Cedar Park</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1629079447777-1e605162dc8d?auto=format&fit=crop&w=700&q=68" alt="New vanity and faucet, Lakeway" loading="lazy"><figcaption>New vanity and faucet, Lakeway</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=700&q=68" alt="Repipe, Pflugerville" loading="lazy"><figcaption>Repipe, Pflugerville</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1600488999585-e4364713b90a?auto=format&fit=crop&w=700&q=68" alt="Fixture install, Georgetown" loading="lazy"><figcaption>Fixture install, Georgetown</figcaption></figure></div></div></section>
+<section id="quote"><div class="wrap"><div class="cta"><div><h2>Need it fixed? Get a free quote.</h2><p>Call (512) 555-0142 or send the form. We call back within the hour during business hours.</p></div>
+<form id="qf"><input type="hidden" name="access_key" value="e62425fa-aae5-42e2-921f-4ee268a73d63"><input type="hidden" name="subject" value="New quote request: Lone Star Plumbing Co."><input type="checkbox" name="botcheck" style="display:none">
+<input name="name" placeholder="Your name" autocomplete="name" required><input name="phone" type="tel" placeholder="Phone number" autocomplete="tel" required><textarea name="message" rows="3" placeholder="What do you need done?"></textarea><button>Request a quote</button></form></div></div></section>
 </main>
-<footer><div class="wrap"><span>© 2026 Lone Star Plumbing Co. · Austin, TX</span><span>Photos: Unsplash</span></div></footer>
-<div class="sticky"><a class="c" href="tel:5125550142">Call now</a><a class="q" href="#quote">Free quote</a></div>
+<footer><div class="wrap foot"><div><b>Lone Star Plumbing Co.</b>Licensed plumbers in Austin, TX<a href="tel:5125550142" style="margin-top:8px;color:var(--ink);font-weight:600">(512) 555-0142</a></div>
+<div><b>Hours</b>Mon to Fri: 7am to 6pm<br>Sat: 8am to 2pm<br>Emergencies: 24/7</div>
+<div><b>Services</b><a href="#quote">Leak repair</a><a href="#quote">Drain cleaning</a><a href="#quote">Water heaters</a><a href="#quote">Repiping</a><a href="#quote">Fixtures</a></div></div>
+<div class="wrap copy"><span>© 2026 Lone Star Plumbing Co.</span><span>Photos: Unsplash</span></div></footer>
+<div class="sticky"><a class="c" href="tel:5125550142">Call</a><a class="q" href="sms:5125550142">Text</a><a class="q" href="#quote">Quote</a></div>
+<script>
+document.getElementById('qf').addEventListener('submit',async e=>{e.preventDefault();const f=e.target,btn=f.querySelector('button');btn.disabled=true;btn.textContent='Sending...';
+try{const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{Accept:'application/json'},body:new FormData(f)});const j=await r.json();
+if(!j.success)throw 0;f.outerHTML='<div class="done">This is a sample site. On your real site, this message goes straight to your email.</div>'}catch{btn.disabled=false;btn.textContent='Could not send. Please call instead.'}});
+</script>
 </body></html>
