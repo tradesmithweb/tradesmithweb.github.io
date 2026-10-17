@@ -32,9 +32,9 @@ h1 em{font-style:normal;color:var(--ah)}
 .actions{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
 .ghost{color:#fff;text-decoration:none;font-weight:600;border-bottom:2px solid rgba(255,255,255,.35);padding:12px 0 2px}
 .checks{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 0}
-.checks span{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:7px 14px;font-size:.92rem;color:#e2e8f0}
+.checks span{white-space:nowrap;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:7px 14px;font-size:.92rem;color:#e2e8f0}
 .checks span b{color:#fff}
-.hero{color:#fff;position:relative;overflow:hidden;padding:84px 0 110px;background:linear-gradient(90deg,rgba(15,23,42,.97) 0%,rgba(15,23,42,.92) 42%,rgba(15,23,42,.62) 100%),#14213d center/cover url('img/hero-bg.webp')}
+.hero{color:#fff;position:relative;overflow:hidden;padding:84px 0 84px;background:linear-gradient(90deg,rgba(15,23,42,.97) 0%,rgba(15,23,42,.92) 42%,rgba(15,23,42,.62) 100%),#14213d center/cover url('img/hero-bg.webp')}
 .hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);gap:64px;align-items:center;position:relative;z-index:1}
 .reply{color:#aab4c5;font-size:.95rem}
 .stage{position:relative;padding:0 96px 220px 0}
@@ -58,7 +58,7 @@ h1 em{font-style:normal;color:var(--ah)}
 .sample .t{display:flex;justify-content:space-between;align-items:center;padding:16px 20px}
 .sample b{font-family:Archivo;font-size:1.08rem}.sample small{color:var(--muted);display:block}
 .sample .go{color:var(--a);font-weight:600;font-size:.95rem;white-space:nowrap}
-.sample .shot img{aspect-ratio:2/1;object-fit:cover;object-position:top;width:100%}
+.sample .shot img{aspect-ratio:960/445;object-fit:cover;object-position:top;width:100%}
 .after{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin:34px 0 0;color:var(--muted)}
 
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;position:relative}
@@ -97,16 +97,16 @@ summary::-webkit-details-marker{display:none}details p{color:var(--muted);margin
 .err{color:#fca5a5;margin:0}
 #cf{scroll-margin-top:90px}.fine{color:#9aa6b8;font-size:.88rem;margin:0;text-align:center}
 .contact .done{background:var(--navy2);border-radius:18px;padding:28px;font-size:1.05rem}
-.mail{color:#fff;font-weight:600;display:inline-block;padding:8px 0}
+.mail{color:#fff;font-weight:600}
 footer{background:var(--navy);color:#8b95a7;font-size:.9rem;padding:26px 0;border-top:1px solid rgba(255,255,255,.08)}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}footer a{color:#cbd2dc}
 @media (max-width:960px){.hero .wrap,.contact,.faq{grid-template-columns:1fr}.hero .wrap{grid-template-columns:minmax(0,1fr);gap:44px}.hvis{max-width:640px}.hero{padding:56px 0 64px;background:linear-gradient(180deg,rgba(15,23,42,.94),rgba(15,23,42,.9)),#14213d center/cover url('img/hero-bg-sm.webp')}
 .feat{grid-template-columns:1fr 1fr}}
-@media (max-width:960px){.featwrap{grid-template-columns:1fr}.featimg{max-width:240px}}
+@media (max-width:960px){.featwrap{grid-template-columns:1fr}.featimg{max-width:240px}.faq{gap:20px}.faq .sub{margin-bottom:0}}
 @media (max-width:680px){nav a:not(.btn){display:none}section{padding:60px 0}.feat,.steps,.scope,.package{grid-template-columns:1fr}.plus{padding:0}.plus:after{width:34px;height:34px;font-size:1.3rem;line-height:34px}.part ul{gap:6px;margin-top:14px}.part .big{font-size:2.5rem}.plus:before{display:none}.package:before{white-space:normal;text-align:center;width:max-content;max-width:90%}.part{padding:28px 22px}.promise{grid-template-columns:1fr;gap:12px}.promise div{padding:18px}.promise p{font-size:.92rem}.steps:before{display:none}
 .samples{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -20px;padding:0 20px 8px}.sample{flex:0 0 74%;scroll-snap-align:start}.sample .t{flex-direction:column;align-items:flex-start;gap:6px}.sample .shot img{aspect-ratio:9/16}.sample .bar{display:none}
-.checks span{font-size:.85rem;padding:5px 10px}.featimg{display:none}
-.lap .bar span{display:none}.hero .actions{flex-direction:column;align-items:stretch;gap:14px}.hero .actions .btn{text-align:center}.hero .actions .ghost{align-self:center}.stage{padding:0 44px 90px 0}.ph{width:122px;border-radius:24px;padding:6px}.ph img{border-radius:19px}.ph .notch{top:11px;height:12px}.feat .card:nth-child(3),.feat .card:nth-child(n+5){display:none}#faq details:nth-of-type(n+4){display:none}.feat-intro{display:none}.hvis{display:none}.hero{padding:40px 0 40px}.hero p.lead{font-size:1.05rem}.reply{font-size:.92rem}.seeall{text-align:center}.samples{scroll-padding-inline:20px}}
+.checks{flex-wrap:nowrap;gap:6px}.checks span{font-size:.8rem;padding:5px 9px}.mail{display:inline-block;padding:8px 0}.featimg{display:none}
+.lap .bar span{display:none}.hero .actions{flex-direction:column;align-items:stretch;gap:14px}.hero .actions .btn{text-align:center}.hero .actions .ghost{align-self:center}.stage{padding:0 44px 90px 0}.ph{width:122px;border-radius:24px;padding:6px}.ph img{border-radius:19px}.ph .notch{top:11px;height:12px}.feat .card:nth-child(3),.feat .card:nth-child(n+5){display:none}#faq details:nth-of-type(n+4){display:none}.feat-intro{display:none}#how+section h2{margin-bottom:24px}.hvis{display:none}.hero{padding:40px 0 40px}.hero p.lead{font-size:1.05rem}.reply{font-size:.92rem}.seeall{text-align:center}.samples{scroll-padding-inline:20px}}
 </style>
 </head>
 <body>
@@ -123,7 +123,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <div class="actions"><a class="btn" href="#cf">Get my free preview</a></div>
 <p class="reply">Got our email? Just reply with your business name and city.</p>
 <p class="seeall"><a class="ghost" href="#samples">See sample sites</a></p>
-<div class="checks"><span><b>$500</b> + $40/mo</span><span>Preview in 3 business days</span><span>No contract</span></div>
+<div class="checks"><span><b>$500</b> + $40/mo</span><span>Preview in 3 days</span><span>No contract</span></div>
 </div>
 <div class="hvis">
 <div class="stage">
@@ -138,10 +138,10 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <h2>See what you'd get</h2>
 <p class="sub">Four sample sites for made-up businesses. Open them on your phone and tap around. Yours gets your name, services, towns, photos and phone number.</p>
 <div class="samples">
-<a class="sample" href="samples/plumber/" target="_blank" rel="noopener"><div class="shot"><div class="bar"><i></i><i></i><i></i></div><picture><source media="(max-width:680px)" srcset="img/plumber-phone.webp"><img src="img/plumber-desk.webp" alt="Plumber sample site" width="960" height="600" loading="lazy"></picture></div><div class="t"><div><b>Plumber</b><small>Emergency banner and a call bar that stays on screen</small></div><span class="go">Open sample →</span></div></a>
-<a class="sample" href="samples/roofer/" target="_blank" rel="noopener"><div class="shot"><div class="bar"><i></i><i></i><i></i></div><picture><source media="(max-width:680px)" srcset="img/roofer-phone.webp"><img src="img/roofer-desk.webp" alt="Roofer sample site" width="960" height="600" loading="lazy"></picture></div><div class="t"><div><b>Roofer</b><small>Free inspection offer and insurance-claim help up front</small></div><span class="go">Open sample →</span></div></a>
-<a class="sample" href="samples/electrician/" target="_blank" rel="noopener"><div class="shot"><div class="bar"><i></i><i></i><i></i></div><picture><source media="(max-width:680px)" srcset="img/electrician-phone.webp"><img src="img/electrician-desk.webp" alt="Electrician sample site" width="960" height="600" loading="lazy"></picture></div><div class="t"><div><b>Electrician</b><small>License, permits and written quotes shown first</small></div><span class="go">Open sample →</span></div></a>
-<a class="sample" href="samples/hvac/" target="_blank" rel="noopener"><div class="shot"><div class="bar"><i></i><i></i><i></i></div><picture><source media="(max-width:680px)" srcset="img/hvac-phone.webp"><img src="img/hvac-desk.webp" alt="Heating and AC sample site" width="960" height="600" loading="lazy"></picture></div><div class="t"><div><b>Heating and AC</b><small>Same-day service and repair-or-replace advice</small></div><span class="go">Open sample →</span></div></a>
+<a class="sample" href="samples/plumber/" target="_blank" rel="noopener"><div class="shot"><div class="bar"><i></i><i></i><i></i></div><picture><source media="(max-width:680px)" srcset="img/plumber-phone.webp"><img src="img/plumber-desk.webp" alt="Plumber sample site" width="960" height="445" loading="lazy"></picture></div><div class="t"><div><b>Plumber</b><small>Emergency banner and a call bar that stays on screen</small></div><span class="go">Open sample →</span></div></a>
+<a class="sample" href="samples/roofer/" target="_blank" rel="noopener"><div class="shot"><div class="bar"><i></i><i></i><i></i></div><picture><source media="(max-width:680px)" srcset="img/roofer-phone.webp"><img src="img/roofer-desk.webp" alt="Roofer sample site" width="960" height="445" loading="lazy"></picture></div><div class="t"><div><b>Roofer</b><small>Free inspection offer and insurance-claim help up front</small></div><span class="go">Open sample →</span></div></a>
+<a class="sample" href="samples/electrician/" target="_blank" rel="noopener"><div class="shot"><div class="bar"><i></i><i></i><i></i></div><picture><source media="(max-width:680px)" srcset="img/electrician-phone.webp"><img src="img/electrician-desk.webp" alt="Electrician sample site" width="960" height="445" loading="lazy"></picture></div><div class="t"><div><b>Electrician</b><small>License, permits and written quotes shown first</small></div><span class="go">Open sample →</span></div></a>
+<a class="sample" href="samples/hvac/" target="_blank" rel="noopener"><div class="shot"><div class="bar"><i></i><i></i><i></i></div><picture><source media="(max-width:680px)" srcset="img/hvac-phone.webp"><img src="img/hvac-desk.webp" alt="Heating and AC sample site" width="960" height="445" loading="lazy"></picture></div><div class="t"><div><b>Heating and AC</b><small>Same-day service and repair-or-replace advice</small></div><span class="go">Open sample →</span></div></a>
 </div>
 <p class="after"><a class="btn" href="#cf">Get my free preview</a><span>Yours is built with your name, services and towns.</span></p>
 </div></section>
