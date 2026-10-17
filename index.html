@@ -70,14 +70,13 @@ h1 em{font-style:normal;color:var(--ah)}
 .promise div{background:var(--navy2);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:24px}
 .promise b{display:block;font-family:Archivo;font-size:1.1rem;margin-bottom:6px}.promise p{margin:0;color:#b6c0cf}
 .promise svg{color:var(--ah);margin-bottom:14px}
-.pricing{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:860px;margin:0 auto;text-align:left}
-.price{background:#fff;border:1px solid var(--line);border-radius:18px;padding:32px}
-.price.main{border:2px solid var(--a);position:relative}
-.price.main:before{content:"Pay after you approve it";position:absolute;top:-13px;left:28px;background:var(--a);color:#fff;font-size:.78rem;font-weight:600;padding:3px 12px;border-radius:999px}
-.price h3{margin:0;font-size:1.15rem}.price .big{font:800 3rem/1.1 Archivo;letter-spacing:-.03em;margin:10px 0 4px}
-.price .big small{font:500 1rem Inter;color:var(--muted)}.price .per{color:var(--muted);margin:0}
-.price ul{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
-.price li{padding-left:28px;position:relative}.price li:before{content:"";position:absolute;left:2px;top:6px;width:13px;height:7px;border-left:2.5px solid var(--a);border-bottom:2.5px solid var(--a);transform:rotate(-45deg)}
+.package{display:grid;grid-template-columns:1fr auto 1fr;align-items:stretch;max-width:900px;margin:0 auto;text-align:left;background:#fff;border:2px solid var(--a);border-radius:20px;position:relative}
+.package:before{content:"One package · pay after you approve it";position:absolute;top:-14px;left:50%;transform:translateX(-50%);white-space:nowrap;background:var(--a);color:#fff;font-size:.8rem;font-weight:600;padding:4px 14px;border-radius:999px}
+.part{padding:34px 32px}.plus{display:grid;place-items:center;font:800 2rem Archivo;color:var(--a);border-left:1px solid var(--line);border-right:1px solid var(--line);padding:0 18px;background:var(--soft)}
+.part h3{margin:0;font-size:1.15rem}.part .big{font:800 3rem/1.1 Archivo;letter-spacing:-.03em;margin:10px 0 4px}
+.part .big small{font:500 1rem Inter;color:var(--muted)}.part .per{color:var(--muted);margin:0}
+.part ul{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
+.part li{padding-left:28px;position:relative}.part li:before{content:"";position:absolute;left:2px;top:6px;width:13px;height:7px;border-left:2.5px solid var(--a);border-bottom:2.5px solid var(--a);transform:rotate(-45deg)}
 .center{text-align:center}.center .sub{margin-left:auto;margin-right:auto}
 .scope{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:860px;margin:22px auto 0;text-align:left}.scope div{border:1px dashed #d6d3c9;border-radius:14px;padding:18px 22px}.scope p{margin:6px 0 0;color:var(--muted);font-size:.95rem}
 .note{color:var(--muted);font-size:.93rem;text-align:center;margin:22px 0 0}
@@ -98,7 +97,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 @media (max-width:960px){.hero .wrap,.contact,.faq{grid-template-columns:1fr}.devices{height:420px;max-width:560px}.checks{margin-bottom:40px}.hero:after{display:none}.hero{padding-bottom:40px}
 .promise,.feat{grid-template-columns:1fr 1fr}}
 @media (max-width:960px){.featwrap{grid-template-columns:1fr}.featimg{max-width:240px}}
-@media (max-width:680px){nav a:not(.btn){display:none}section{padding:60px 0}.feat,.pricing,.steps,.scope{grid-template-columns:1fr}.promise{grid-template-columns:1fr 1fr;gap:12px}.promise div{padding:18px}.promise p{font-size:.92rem}.steps:before{display:none}
+@media (max-width:680px){nav a:not(.btn){display:none}section{padding:60px 0}.feat,.steps,.scope,.package{grid-template-columns:1fr}.plus{border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:6px 0}.package:before{white-space:normal;text-align:center;width:max-content;max-width:90%}.part{padding:28px 22px}.promise{grid-template-columns:1fr 1fr;gap:12px}.promise div{padding:18px}.promise p{font-size:.92rem}.steps:before{display:none}
 .samples{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -20px;padding:0 20px 8px}.sample{flex:0 0 74%;scroll-snap-align:start}.sample .t{flex-direction:column;align-items:flex-start;gap:6px}.sample .shot img{aspect-ratio:9/16}.sample .bar{display:none}.pill{top:10px}
 .checks span{font-size:.85rem;padding:5px 10px}.featimg{display:none}
 .devices{height:360px;max-width:260px;margin:0 auto}.browser{display:none}.phone{position:relative;left:auto;bottom:auto;width:170px;height:350px;margin:0 auto}}
@@ -186,10 +185,11 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <p class="eyebrow">Pricing</p>
 <h2>One price. No surprises.</h2>
 <p class="sub">You pay after you approve the finished site. Not before.</p>
-<div class="pricing">
-<div class="price main"><h3>Your website</h3><div class="big">$500</div><p class="per">One time</p>
+<div class="package">
+<div class="part"><h3>Your website</h3><div class="big">$500</div><p class="per">One time, after you approve it</p>
 <ul><li>A complete one-page site: services, towns, photos, quote form</li><li>Call and text buttons on every screen</li><li>Business details set up for Google</li><li>Connected to your own domain</li></ul></div>
-<div class="price"><h3>Hosting and edits</h3><div class="big">$40<small> / month</small></div><p class="per">Cancel anytime</p>
+<div class="plus" aria-hidden="true">+</div>
+<div class="part"><h3>Hosting and edits</h3><div class="big">$40<small> / month</small></div><p class="per">Starts when your site goes live. Cancel anytime.</p>
 <ul><li>Hosting and the padlock (SSL) included</li><li>Small changes: text, photos, hours, phone</li><li>Done within 2 business days</li><li>Bigger jobs, like a new page, get a price first</li></ul></div>
 </div>
 <div class="scope"><div><b>Included</b><p>One page with up to 8 services and 10 towns, your photos or matching stock photos, call and text buttons, quote form, Google business details, one round of changes before launch.</p></div><div><b>Not included</b><p>Logo design, photography, extra pages (priced before we start), online booking or payment systems.</p></div></div>
