@@ -40,7 +40,7 @@ h1 em{font-style:normal;color:var(--ah)}
 .browser{position:absolute;right:0;top:40px;width:92%;max-width:540px;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 30px 70px rgba(0,0,0,.45)}
 .browser .bar{height:30px;background:#e8e8e6;display:flex;align-items:center;gap:6px;padding:0 12px}
 .browser .bar i{width:10px;height:10px;border-radius:50%;background:#c9c9c5}
-.phone{position:absolute;left:-10px;bottom:-10px;width:180px;height:370px;border-radius:32px;background:#0b0b0c;padding:9px;box-shadow:0 30px 60px rgba(0,0,0,.5);z-index:2}
+.phone{position:absolute;left:-40px;bottom:-50px;width:180px;height:370px;border-radius:32px;background:#0b0b0c;padding:9px;box-shadow:0 30px 60px rgba(0,0,0,.5);z-index:2}
 .phone img{border-radius:24px;width:100%;height:100%;object-fit:cover;object-position:top}
 .samples{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
 .sample{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .15s,box-shadow .15s}
@@ -53,11 +53,13 @@ h1 em{font-style:normal;color:var(--ah)}
 .sample .go{color:var(--a);font-weight:600;font-size:.95rem;white-space:nowrap}
 .sample .shot img{aspect-ratio:16/9;object-fit:cover;object-position:top;width:100%}
 .after{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin:34px 0 0;color:var(--muted)}
-.pill{position:absolute;top:36px;left:10px;background:rgba(15,23,42,.85);color:#fff;font-size:.72rem;padding:3px 9px;border-radius:999px;z-index:2}
+.pill{display:none}
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;position:relative}
-.steps:before{content:"";position:absolute;top:21px;left:8%;right:8%;height:2px;background:var(--line)}
+.steps:before{content:"";position:absolute;top:21px;left:22px;right:calc(33.33% - 22px);height:2px;background:var(--line)}
 .step{position:relative}.step .n{width:44px;height:44px;border-radius:50%;background:var(--a);color:#fff;font:800 1.05rem Archivo;display:grid;place-items:center;margin-bottom:18px;box-shadow:0 0 0 8px var(--white)}
 .step h3{margin:0 0 6px;font-size:1.15rem}.step p{margin:0;color:var(--muted)}
+.founder{display:flex;gap:32px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:22px;padding:32px;max-width:860px}.founder img{width:150px;height:150px;border-radius:50%;object-fit:cover;flex:0 0 auto}.founder h2{margin-bottom:8px}.founder p:last-child{color:var(--muted);margin:0;font-size:1.06rem}
+@media (max-width:680px){.founder{flex-direction:column;align-items:flex-start;padding:24px}.founder img{width:110px;height:110px}}
 .featwrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
 .featimg{border-radius:28px;background:#0b0b0c;padding:10px;max-width:330px;margin:0 auto;box-shadow:0 30px 60px rgba(20,33,61,.25)}.featimg img{border-radius:20px;aspect-ratio:9/17;object-fit:cover;object-position:top;width:100%}
 .feat{display:grid;grid-template-columns:1fr 1fr;gap:30px 34px}.feat .card{background:none;border:0;padding:0}
@@ -97,7 +99,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 .promise,.feat{grid-template-columns:1fr 1fr}}
 @media (max-width:960px){.featwrap{grid-template-columns:1fr}.featimg{max-width:240px}}
 @media (max-width:680px){nav a:not(.btn){display:none}section{padding:60px 0}.feat,.pricing,.steps,.scope{grid-template-columns:1fr}.promise{grid-template-columns:1fr 1fr;gap:12px}.promise div{padding:18px}.promise p{font-size:.92rem}.steps:before{display:none}
-.samples{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -20px;padding:0 20px 8px}.sample{flex:0 0 74%;scroll-snap-align:start}.sample .shot img{aspect-ratio:9/16}.sample .bar{display:none}.pill{top:10px}
+.samples{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -20px;padding:0 20px 8px}.sample{flex:0 0 74%;scroll-snap-align:start}.sample .t{flex-direction:column;align-items:flex-start;gap:6px}.sample .shot img{aspect-ratio:9/16}.sample .bar{display:none}.pill{top:10px}
 .checks span{font-size:.85rem;padding:5px 10px}.featimg{display:none}
 .devices{height:360px;max-width:260px;margin:0 auto}.browser{display:none}.phone{position:relative;left:auto;bottom:auto;width:170px;height:350px;margin:0 auto}}
 </style>
@@ -114,7 +116,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <h1>Your new website, built <em>before</em> you pay anything.</h1>
 <p class="lead">For plumbers, roofers, electricians and HVAC companies. We build a preview of your new site first. Like it, and it goes live. Don't, and you owe nothing.</p>
 <div class="actions"><a class="btn" href="#contact">Get my free preview</a><a class="ghost" href="#samples">See sample sites</a></div>
-<div class="checks"><span><b>$500</b> once + $40/month</span><span>Pay only if you like it</span><span>Cancel anytime, keep your site</span></div>
+<div class="checks"><span><b>$500</b> once + $40/month</span><span>Pay only if you like it</span><span>Keep your site if you cancel</span></div>
 </div>
 <div class="devices">
 <div class="browser"><div class="bar"><i></i><i></i><i></i></div><img src="img/roofer-desk.webp" alt="Sample roofing company website on a laptop" width="960" height="600"></div>
@@ -142,10 +144,16 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <p class="sub">You see your finished site before you decide anything.</p>
 <div class="steps">
 <div class="step"><div class="n">1</div><h3>Tell us your business</h3><p>Send your business name and city, or just reply to our email.</p></div>
-<div class="step"><div class="n">2</div><h3>Get your preview link</h3><p>Within 3 business days. Ask for changes and we make them.</p></div>
+<div class="step"><div class="n">2</div><h3>Get your preview link</h3><p>Within 3 business days. One round of changes is included.</p></div>
 <div class="step"><div class="n">3</div><h3>Approve it, then pay</h3><p>It goes live on your own domain. You pay after that, not before.</p></div>
 </div>
 </div></section>
+
+<section style="padding-bottom:0"><div class="wrap"><div class="founder">
+<img src="img/founder.webp" alt="Nick, who builds the sites" width="600" height="600" loading="lazy">
+<div><p class="eyebrow">Who builds your site</p><h2>Hi, I'm Nick.</h2>
+<p>I build every site myself and answer every email myself. No salespeople, no handoffs. If something on your site needs changing, you write to me and I fix it.</p></div>
+</div></div></section>
 
 <section><div class="wrap">
 <p class="eyebrow">What's included</p>
