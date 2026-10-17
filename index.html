@@ -4,89 +4,149 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Tradesmith Web | Websites for Plumbers, Roofers, Electricians and HVAC</title>
-<meta name="description" content="Simple, fast websites for trade businesses. We build your site first. You only pay if you like it. $500 one time, $40 a month for hosting and edits.">
+<meta name="description" content="We build your new website first. You see it before you pay a cent. Websites for trade businesses: $500 once, $40 a month for hosting and edits.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fafaf7;--card:#fff;--ink:#1d2330;--muted:#5d6574;--line:#e4e4de;--brand:#c2410c;--brand2:#9a3412;--soft:#fff3eb}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-header{border-bottom:1px solid var(--line);background:var(--card)}
-header .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
-.logo{font-weight:800;font-size:1.15rem;letter-spacing:-.01em}.logo span{color:var(--brand)}
-header a.btn{padding:9px 16px;font-size:.95rem}
-.btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:14px 22px}
-.btn:hover{background:var(--brand2)}
-.hero{padding:72px 0 56px}
-h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.1;letter-spacing:-.025em;margin:0 0 18px;max-width:780px}
-.lead{font-size:1.2rem;color:var(--muted);max-width:640px;margin:0 0 28px}
-.note{color:var(--muted);font-size:.95rem;margin-top:14px}
-h2{font-size:1.7rem;letter-spacing:-.02em;margin:0 0 22px}
-section{padding:56px 0;border-top:1px solid var(--line)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
-.card h3{margin:0 0 6px;font-size:1.08rem}.card p{margin:0;color:var(--muted)}
-.num{display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--soft);color:var(--brand);font-weight:800;align-items:center;justify-content:center;margin-bottom:12px}
-.price{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;align-items:stretch}
-.price .card b{font-size:2.4rem;letter-spacing:-.02em;display:block;margin:6px 0}
-ul.check{list-style:none;padding:0;margin:0;display:grid;gap:10px}
-ul.check li{padding-left:30px;position:relative}
-ul.check li:before{content:"✓";position:absolute;left:0;top:0;color:var(--brand);font-weight:800}
-.contact{background:var(--ink);color:#fff;border-radius:18px;padding:40px;text-align:center}
-.contact p{color:#c9ced8;max-width:560px;margin:0 auto 22px}
-.contact a.mail{color:#fff;font-size:1.25rem;font-weight:700}
+:root{--navy:#111827;--navy2:#1f2937;--ink:#141821;--muted:#5d6574;--line:#e5e5df;--bg:#f8f8f5;--a:#ea580c;--a2:#c2410c;--soft:#fff3ea}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.6 Inter,system-ui,sans-serif}
+h1,h2,h3,.logo{font-family:Archivo,Inter,sans-serif;letter-spacing:-.02em}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+header{background:var(--navy);color:#fff}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:68px}
+.logo{font-weight:800;font-size:1.2rem}.logo span{color:var(--a)}
+.btn{display:inline-block;background:var(--a);color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:14px 22px;border:0}
+.btn:hover{background:var(--a2)}.btn.sm{padding:9px 16px;font-size:.95rem}
+.ghost{color:#fff;text-decoration:none;font-weight:600;border-bottom:2px solid rgba(255,255,255,.35);padding-bottom:2px}
+.hero{background:var(--navy);color:#fff;padding:60px 0 80px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+h1{font-size:clamp(2.2rem,5vw,3.5rem);line-height:1.06;margin:0 0 18px}
+h1 em{font-style:normal;color:var(--a)}
+.hero p{font-size:1.18rem;color:#cbd2dc;max-width:560px;margin:0 0 30px}
+.actions{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.promise{display:flex;gap:10px 22px;flex-wrap:wrap;margin-top:30px;color:#cbd2dc;font-size:.95rem}.promise span:before{content:"✓ ";color:var(--a);font-weight:800}
+.phone{width:290px;height:590px;margin:0 auto;border-radius:42px;background:#000;padding:12px;box-shadow:0 30px 80px rgba(0,0,0,.5);position:relative}
+.phone iframe{width:390px;height:844px;border:0;border-radius:30px;transform:scale(.68);transform-origin:0 0;background:#fff;pointer-events:none}
+.phone .scr{width:266px;height:566px;overflow:hidden;border-radius:30px}
+.phone-tag{text-align:center;color:#9aa3b2;font-size:.85rem;margin-top:14px}
+section{padding:76px 0}
+h2{font-size:clamp(1.7rem,3.5vw,2.4rem);margin:0 0 10px}.sub{color:var(--muted);max-width:640px;margin:0 0 36px;font-size:1.08rem}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
+.card h3{margin:0 0 6px;font-size:1.15rem}.card p{margin:0;color:var(--muted)}
+.num{width:38px;height:38px;border-radius:50%;background:var(--soft);color:var(--a2);font-weight:800;display:grid;place-items:center;margin-bottom:14px;font-family:Archivo}
+.samples{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.sample{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .15s,box-shadow .15s}
+.sample:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.08)}
+.thumb{height:250px;overflow:hidden;background:#ddd;position:relative}
+.thumb iframe{width:1280px;height:800px;border:0;transform:scale(.29);transform-origin:0 0;pointer-events:none}
+.sample div.t{padding:16px 18px}.sample b{display:block;font-family:Archivo;font-size:1.05rem}.sample small{color:var(--muted)}
+.label{position:absolute;top:10px;left:10px;background:rgba(17,24,39,.85);color:#fff;font-size:.75rem;padding:3px 9px;border-radius:999px}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feat .card h3:before{content:"";display:block;width:28px;height:4px;background:var(--a);border-radius:2px;margin-bottom:14px}
+.guarantee{background:var(--soft);border:1px solid #fed7aa;border-radius:20px;padding:34px;display:grid;grid-template-columns:repeat(2,1fr);gap:18px 34px}
+.guarantee div{display:flex;gap:12px}.guarantee div:before{content:"✓";color:var(--a2);font-weight:800;font-size:1.2rem}
+.guarantee b{display:block}
+.pricing{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:820px}
+.price b.big{font-family:Archivo;font-size:2.8rem;display:block;margin:4px 0}
+ul.inc{margin:14px 0 0;padding-left:18px;color:var(--muted)}
+.faq{max-width:820px}
+details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin-bottom:10px}
+summary{font-weight:600;cursor:pointer;font-size:1.05rem}details p{color:var(--muted);margin:10px 0 0}
+.contact{background:var(--navy);color:#fff;border-radius:24px;padding:48px;text-align:center}
+.contact p{color:#cbd2dc;max-width:560px;margin:0 auto 24px}.contact .mail{display:block;margin-top:16px;color:#fff;font-weight:600}
 footer{color:var(--muted);font-size:.9rem;padding:30px 0 50px;text-align:center}
-@media (max-width:600px){.hero{padding:48px 0 40px}section{padding:44px 0}.contact{padding:28px 18px}}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.phone{display:none}.phone-tag{display:none}.steps,.samples,.feat,.guarantee,.pricing{grid-template-columns:1fr}section{padding:56px 0}.contact{padding:32px 20px}.hero{padding:44px 0 56px}}
 </style>
 </head>
 <body>
-<header><div class="wrap"><div class="logo">Tradesmith<span>Web</span></div><a class="btn" href="mailto:tradesmithweb@gmail.com">Get your free preview</a></div></header>
+<header><div class="wrap"><div class="logo">Tradesmith<span>Web</span></div><a class="btn sm" href="#contact">Free preview</a></div></header>
 
-<main class="wrap">
-<div class="hero">
-<h1>Websites for plumbers, roofers, electricians and HVAC pros.</h1>
-<p class="lead">We build your new site first, using your business details. You look at it. If you like it, it goes live. If not, you owe nothing.</p>
-<a class="btn" href="mailto:tradesmithweb@gmail.com?subject=Free%20website%20preview">Ask for a free preview</a>
-<p class="note">Ready in about 7 days. No contracts.</p>
+<div class="hero"><div class="wrap">
+<div>
+<h1>Your new website, built <em>before</em> you pay a cent.</h1>
+<p>Websites for plumbers, roofers, electricians and HVAC companies. We build a preview of your new site first. If you like it, it goes live. If not, you walk away and owe nothing.</p>
+<div class="actions"><a class="btn" href="#contact">Get my free preview</a><a class="ghost" href="#samples">See sample sites</a></div>
+<div class="promise"><span>Ready in 7 days</span><span>You own your domain</span><span>No contracts</span></div>
 </div>
+<div><div class="phone"><div class="scr"><iframe src="samples/plumber/" title="Sample plumber website on a phone" loading="lazy" tabindex="-1"></iframe></div></div><div class="phone-tag">Sample site on a phone</div></div>
+</div></div>
 
-<section>
+<main>
+<section id="samples"><div class="wrap">
+<h2>See what you'd get</h2>
+<p class="sub">Three sample sites for made-up businesses, so you can tap through them on your phone. Yours gets your name, services, service area and phone number.</p>
+<div class="samples">
+<a class="sample" href="samples/plumber/" target="_blank"><div class="thumb"><span class="label">Sample</span><iframe src="samples/plumber/" title="Plumber sample" loading="lazy" tabindex="-1"></iframe></div><div class="t"><b>Plumber</b><small>Lone Star Plumbing Co., a sample</small></div></a>
+<a class="sample" href="samples/roofer/" target="_blank"><div class="thumb"><span class="label">Sample</span><iframe src="samples/roofer/" title="Roofer sample" loading="lazy" tabindex="-1"></iframe></div><div class="t"><b>Roofer</b><small>High Plains Roofing, a sample</small></div></a>
+<a class="sample" href="samples/electrician/" target="_blank"><div class="thumb"><span class="label">Sample</span><iframe src="samples/electrician/" title="Electrician sample" loading="lazy" tabindex="-1"></iframe></div><div class="t"><b>Electrician</b><small>Brightline Electric, a sample</small></div></a>
+</div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
 <h2>How it works</h2>
-<div class="grid">
-<div class="card"><div class="num">1</div><h3>We build a preview</h3><p>Using your business name, services, area and reviews that are already public.</p></div>
-<div class="card"><div class="num">2</div><h3>You check it</h3><p>Tell us what to change: photos, wording, services, colors. We fix it.</p></div>
-<div class="card"><div class="num">3</div><h3>It goes live</h3><p>On your own domain. We handle the hosting and keep it updated.</p></div>
+<p class="sub">No sales calls, no deposit. You see the finished site first.</p>
+<div class="steps">
+<div class="card"><div class="num">1</div><h3>Send your business name and city</h3><p>Or reply to our email. We take it from there.</p></div>
+<div class="card"><div class="num">2</div><h3>We build your preview</h3><p>Within a few days you get a link. Tell us what to change and we change it.</p></div>
+<div class="card"><div class="num">3</div><h3>Like it? It goes live</h3><p>On your own domain, in your name. Then you pay. Not before.</p></div>
 </div>
-</section>
+</div></section>
 
-<section>
-<h2>What your site does</h2>
-<div class="grid">
-<div class="card"><h3>Works on phones</h3><p>Most people looking for a plumber or roofer are on their phone. Your site looks right on every screen.</p></div>
-<div class="card"><h3>One tap to call</h3><p>A big call button on every page, so customers reach you instead of the next company.</p></div>
-<div class="card"><h3>Quote requests</h3><p>A simple form that sends job requests straight to your email.</p></div>
-<div class="card"><h3>Shows up on Google</h3><p>Set up so Google understands your services and service area.</p></div>
-<div class="card"><h3>Fast</h3><p>Loads in about a second, even on a weak signal.</p></div>
-<div class="card"><h3>Changes on request</h3><p>New service, new phone number, holiday hours: email us and it's done.</p></div>
+<section style="padding-top:0"><div class="wrap">
+<h2>What your site does for you</h2>
+<p class="sub">Built for the people who find you on their phone with a problem right now.</p>
+<div class="feat">
+<div class="card"><h3>Gets you calls</h3><p>A call button on every screen. One tap and they're talking to you, not the next company.</p></div>
+<div class="card"><h3>Takes quote requests</h3><p>A short form sends jobs straight to your email, even at night.</p></div>
+<div class="card"><h3>Looks right on phones</h3><p>Most of your customers search on a phone. Every page is built for that first.</p></div>
+<div class="card"><h3>Set up for Google</h3><p>Your services and service area are set up so Google knows what you do and where.</p></div>
+<div class="card"><h3>Loads in a second</h3><p>No heavy plugins or page builders. Fast even on a weak signal.</p></div>
+<div class="card"><h3>Changes when you ask</h3><p>New service, new number, holiday hours. Email us and it's done, included in the monthly fee.</p></div>
 </div>
-</section>
+</div></section>
 
-<section>
-<h2>Price</h2>
-<div class="price">
-<div class="card"><h3>Setup</h3><b>$500</b><p>One time, paid only after you approve the finished site.</p></div>
-<div class="card"><h3>Hosting and edits</h3><b>$40<span style="font-size:1rem;font-weight:500;color:var(--muted)"> / month</span></b><p>Hosting, security, small changes whenever you need them. Cancel anytime.</p></div>
-<div class="card"><h3>Included</h3><ul class="check"><li>Up to 5 pages</li><li>Call button and quote form</li><li>Your own domain connected (domain about $12 a year, paid by you)</li><li>Google setup</li></ul></div>
+<section style="padding-top:0"><div class="wrap">
+<h2>Our promise</h2>
+<p class="sub">In writing, before anything goes live.</p>
+<div class="guarantee">
+<div><span><b>You see it before you pay</b>No deposit. You pay only after you approve the finished site.</span></div>
+<div><span><b>Don't like it? Walk away</b>If the preview isn't for you, you owe nothing.</span></div>
+<div><span><b>Your domain is yours</b>Registered in your name. If you ever leave, it stays with you.</span></div>
+<div><span><b>Cancel anytime, keep your site</b>Stop the monthly plan and we send you all the site files.</span></div>
 </div>
-</section>
+</div></section>
 
-<section>
+<section style="padding-top:0"><div class="wrap">
+<h2>Simple pricing</h2>
+<p class="sub">No hidden fees, no long contracts.</p>
+<div class="pricing">
+<div class="card price"><h3>Website</h3><b class="big">$500</b><p>One time, after you approve it.</p><ul class="inc"><li>Up to 5 pages</li><li>Call button and quote form</li><li>Google setup for your services and area</li><li>Connected to your domain</li></ul></div>
+<div class="card price"><h3>Hosting and edits</h3><b class="big">$40<span style="font-size:1rem;color:var(--muted);font-family:Inter"> / month</span></b><p>Cancel anytime.</p><ul class="inc"><li>Fast, secure hosting</li><li>Small changes whenever you need them</li><li>Kept up to date</li></ul></div>
+</div>
+<p class="sub" style="margin-top:16px;font-size:.95rem">Your domain name costs about $12 a year, paid directly by you, so it's always in your name.</p>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap faq">
+<h2>Questions</h2>
+<details><summary>Why is it cheaper than other web designers?</summary><p>We only build sites for trade businesses, from one design made for trades, so we don't start from scratch every time. You still get your own content, photos and colors.</p></details>
+<details><summary>Do I own my domain and site?</summary><p>Yes. The domain is registered in your name. If you cancel, we send you every file of your site.</p></details>
+<details><summary>I already have a website. Can you replace it?</summary><p>Yes. We build the new one as a preview first. Your old site stays up until you approve the switch.</p></details>
+<details><summary>What do you need from me?</summary><p>Your business name, phone number, services and the towns you cover. Photos of your work and team help but aren't required.</p></details>
+<details><summary>What happens if I cancel the monthly plan?</summary><p>Nothing bad. We send you the site files and help move it wherever you want. No cancellation fee.</p></details>
+<details><summary>Who writes the words on the site?</summary><p>We do, based on your services and area. You can change anything before it goes live.</p></details>
+</div></section>
+
+<section id="contact" style="padding-top:0"><div class="wrap">
 <div class="contact">
 <h2>Want to see yours?</h2>
-<p>Send us your business name and city. We'll build a preview and send you the link. Free, no strings.</p>
-<a class="mail" href="mailto:tradesmithweb@gmail.com?subject=Free%20website%20preview">tradesmithweb@gmail.com</a>
+<p>Email your business name and city. We'll build your preview and send you the link within a few days. Free, no obligation.</p>
+<a class="btn" href="mailto:tradesmithweb@gmail.com?subject=Free%20website%20preview">Email for a free preview</a>
+<span class="mail">tradesmithweb@gmail.com · we reply within one business day</span>
 </div>
-</section>
+</div></section>
 </main>
 
-<footer>© 2026 Tradesmith Web</footer>
+<footer>© 2026 Tradesmith Web · Photos on sample sites from Unsplash</footer>
 </body>
 </html>
