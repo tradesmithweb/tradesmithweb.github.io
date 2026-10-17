@@ -25,23 +25,22 @@ header .wrap{display:flex;justify-content:space-between;align-items:center;heigh
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.2rem;color:#fff;text-decoration:none}
 .mark{width:26px;height:26px;border-radius:7px;background:var(--a);display:grid;place-items:center}
 nav{display:flex;gap:28px;align-items:center}nav a{color:#cbd2dc;text-decoration:none;font-size:.95rem}nav a:hover{color:#fff}nav a.btn{color:#fff}
-.hero{background:var(--navy);color:#fff;padding:64px 0 0;overflow:hidden;position:relative}
-.hero:after{content:"";position:absolute;inset:auto 0 0 0;height:120px;background:var(--bg)}
-.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;position:relative;z-index:1}
+.hero{background:var(--navy);color:#fff;padding:72px 0 88px;overflow:hidden;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center;position:relative;z-index:1}
 h1{font-size:clamp(2.3rem,5vw,3.7rem);line-height:1.04;margin:0 0 20px}
 h1 em{font-style:normal;color:var(--ah)}
 .hero p.lead{font-size:1.18rem;color:#c7cfdb;max-width:540px;margin:0 0 30px}
 .actions{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
 .ghost{color:#fff;text-decoration:none;font-weight:600;border-bottom:2px solid rgba(255,255,255,.35);padding:12px 0 2px}
-.checks{display:flex;gap:10px;flex-wrap:wrap;margin:30px 0 140px}
+.checks{display:flex;gap:8px;flex-wrap:wrap;margin:30px 0 0}
 .checks span{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:7px 14px;font-size:.92rem;color:#e2e8f0}
 .checks span b{color:#fff}
-.devices{position:relative;height:520px}
-.browser{position:absolute;right:0;top:40px;width:92%;max-width:540px;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 30px 70px rgba(0,0,0,.45)}
-.browser .bar{height:30px;background:#e8e8e6;display:flex;align-items:center;gap:6px;padding:0 12px}
-.browser .bar i{width:10px;height:10px;border-radius:50%;background:#c9c9c5}
-.phone{position:absolute;left:-40px;bottom:-50px;width:180px;height:370px;border-radius:32px;background:#0b0b0c;padding:9px;box-shadow:0 30px 60px rgba(0,0,0,.5);z-index:2}
-.phone img{border-radius:24px;width:100%;height:100%;object-fit:cover;object-position:top}
+.devices{position:relative}
+.browser{border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 30px 70px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.08)}
+.browser .bar{height:34px;background:#e9e8e4;display:flex;align-items:center;gap:7px;padding:0 14px}
+.browser .bar i{width:11px;height:11px;border-radius:50%;background:#c9c8c3}
+.browser .bar span{margin-left:14px;flex:1;background:#fff;border-radius:6px;font-size:.75rem;color:#6b7280;padding:3px 10px;max-width:260px}
+.cap{color:#8f9bb0;font-size:.85rem;text-align:center;margin:14px 0 0}
 .samples{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
 .sample{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .15s,box-shadow .15s}
 .sample:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(15,23,42,.1)}
@@ -92,13 +91,13 @@ summary::-webkit-details-marker{display:none}details p{color:var(--muted);margin
 .mail{color:#fff;font-weight:600;display:inline-block;padding:8px 0}
 footer{background:var(--navy);color:#8b95a7;font-size:.9rem;padding:26px 0;border-top:1px solid rgba(255,255,255,.08)}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}footer a{color:#cbd2dc}
-@media (max-width:960px){.hero .wrap,.contact,.faq{grid-template-columns:1fr}.devices{height:420px;max-width:560px}.checks{margin-bottom:40px}.hero:after{display:none}.hero{padding-bottom:40px}
+@media (max-width:960px){.hero .wrap,.contact,.faq{grid-template-columns:1fr}.devices{max-width:620px}.hero{padding:52px 0 60px}
 .promise,.feat{grid-template-columns:1fr 1fr}}
 @media (max-width:960px){.featwrap{grid-template-columns:1fr}.featimg{max-width:240px}}
 @media (max-width:680px){nav a:not(.btn){display:none}section{padding:60px 0}.feat,.steps,.scope,.package{grid-template-columns:1fr}.plus{border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:6px 0}.package:before{white-space:normal;text-align:center;width:max-content;max-width:90%}.part{padding:28px 22px}.promise{grid-template-columns:1fr 1fr;gap:12px}.promise div{padding:18px}.promise p{font-size:.92rem}.steps:before{display:none}
 .samples{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -20px;padding:0 20px 8px}.sample{flex:0 0 74%;scroll-snap-align:start}.sample .t{flex-direction:column;align-items:flex-start;gap:6px}.sample .shot img{aspect-ratio:9/16}.sample .bar{display:none}.pill{top:10px}
 .checks span{font-size:.85rem;padding:5px 10px}.featimg{display:none}
-.devices{height:360px;max-width:260px;margin:0 auto}.browser{display:none}.phone{position:relative;left:auto;bottom:auto;width:170px;height:350px;margin:0 auto}}
+.browser .bar span{display:none}}
 </style>
 </head>
 <body>
@@ -113,11 +112,11 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <h1>Your new website, built <em>before</em> you pay anything.</h1>
 <p class="lead">For plumbers, roofers, electricians and HVAC companies. We build a preview of your new site first. Like it, and it goes live. Don't, and you owe nothing.</p>
 <div class="actions"><a class="btn" href="#contact">Get my free preview</a><a class="ghost" href="#samples">See sample sites</a></div>
-<div class="checks"><span><b>$500</b> once + $40/month</span><span>Pay only if you like it</span><span>Keep your site if you cancel</span></div>
+<div class="checks"><span><b>$500</b> + $40/mo</span><span>Pay only if you like it</span><span>No contract</span></div>
 </div>
 <div class="devices">
-<div class="browser"><div class="bar"><i></i><i></i><i></i></div><img src="img/roofer-desk.webp" alt="Sample roofing company website on a laptop" width="960" height="600"></div>
-<div class="phone"><img src="img/plumber-phone.webp" alt="Sample plumbing website on a phone" width="750" height="1623"></div>
+<div class="browser"><div class="bar"><i></i><i></i><i></i><span>highplainsroofing.com</span></div><img src="img/hero-roofer.webp" alt="Sample roofing company website built by Tradesmith Web" width="2000" height="1280"></div>
+<p class="cap">Sample site for a made-up roofing company</p>
 </div>
 </div></div>
 
