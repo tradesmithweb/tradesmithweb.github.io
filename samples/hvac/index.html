@@ -27,7 +27,7 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 .trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:22px 20px}
 .trust .wrap>div{display:flex;gap:12px;align-items:center;font-size:.95rem}.trust b{display:block;font-size:.98rem}.trust span{color:var(--muted);font-size:.85rem}
 .trust i{color:var(--a);flex:0 0 auto}
-section{padding:72px 0}h2{font-size:clamp(1.6rem,3.4vw,2.3rem);margin:0 0 10px}.sub{color:var(--muted);margin:0 0 34px;max-width:640px}
+section{padding:72px 0;scroll-margin-top:68px}h2{font-size:clamp(1.6rem,3.4vw,2.3rem);margin:0 0 10px}.sub{color:var(--muted);margin:0 0 34px;max-width:640px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
 .card h3{margin:0 0 6px;font-size:1.15rem}.card p{margin:0;color:var(--muted)}
@@ -43,21 +43,22 @@ ul.why li:before{content:"";flex:0 0 10px;height:10px;margin-top:8px;border-radi
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.gallery figure{margin:0;position:relative;border-radius:14px;overflow:hidden}
 .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:24px 14px 10px;color:#fff;font-weight:600;font-size:.92rem;background:linear-gradient(transparent,rgba(0,0,0,.7))}
 .foot{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:28px;padding:44px 20px 20px}.foot b{display:block;color:var(--ink);margin-bottom:8px;font-family:Archivo}.foot a{display:block;text-decoration:none}
+.back{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;border:2px dashed var(--line);border-radius:18px;padding:24px 28px;background:#fff}.back p{margin:4px 0 0;color:var(--muted)}.back a{background:#0f172a;color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:12px 18px}
 .cta{background:var(--ink);color:#fff;border-radius:22px;padding:48px;display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center}
 .cta p{color:#c4c8d0;margin:0}
-form{display:grid;gap:10px}input,textarea{font:inherit;padding:12px 14px;border-radius:10px;border:1px solid #333a48;background:#1d212b;color:#fff}
+form{display:grid;gap:12px}form label{display:grid;gap:6px;font-size:.9rem;color:#c4c8d0}.err{color:#fca5a5;margin:0}input,textarea{font:inherit;font-size:16px;padding:12px 14px;border-radius:10px;border:1px solid #333a48;background:#1d212b;color:#fff}
 form button{font:inherit;font-weight:700;background:var(--a);color:#fff;border:0;border-radius:10px;padding:13px;cursor:pointer}
 .done{background:#1d212b;border-radius:12px;padding:18px}
 footer{background:#fff;border-top:1px solid var(--line);color:var(--muted);font-size:.93rem;padding-bottom:80px}.copy{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:16px 20px;border-top:1px solid var(--line);font-size:.85rem}
 .sticky{display:none}
 @media (max-width:860px){.grid,.trust .wrap{grid-template-columns:1fr 1fr}.split,.cta{grid-template-columns:1fr}.cta{padding:30px 22px}}
-@media (max-width:600px){.grid,.foot{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.hero .wrap{padding:60px 20px 56px}section{padding:52px 0}header .call{display:none}
+@media (max-width:600px){.grid,.foot,.trust .wrap{grid-template-columns:1fr}.trust .wrap{gap:12px}.gallery{grid-template-columns:1fr 1fr}.hero{background-image:url('https://images.unsplash.com/photo-1642749776312-aa42ce20c9f5?auto=format&fit=crop&w=800&q=68')}.hero .wrap{padding:52px 20px 48px}section{padding:52px 0}header .wrap{height:60px}header .call{padding:9px 14px;font-size:.9rem}header .call span{display:none}.alert{font-size:.85rem;padding:6px 10px}
 .sticky{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:9;gap:8px;padding:10px;background:#fff;border-top:1px solid var(--line)}
 .sticky a{flex:1;text-align:center;text-decoration:none;font-weight:700;border-radius:10px;padding:13px 6px}.sticky a.c{background:var(--a);color:#fff}.sticky a.q{border:2px solid var(--ink)}}
 </style></head><body>
-<div class="banner">Sample site, not a real business. Built by <a href="https://tradesmithweb.github.io/">Tradesmith Web</a></div>
+<div class="banner">Sample site, not a real business. Built by <a href="https://tradesmithweb.github.io/#contact">Tradesmith Web</a></div>
 <div class="alert">AC out in the heat? Same-day service: <a href="tel:2105550163">(210) 555-0163</a></div>
-<header><div class="wrap"><div class="logo">Coastal Comfort Heating &amp; Air<small>AC and heating service · San Antonio, TX</small></div><a class="call" href="tel:2105550163">Call (210) 555-0163</a></div></header>
+<header><div class="wrap"><div class="logo">Coastal Comfort Heating &amp; Air<small>AC and heating service · San Antonio, TX</small></div><a class="call" href="tel:2105550163">Call<span> (210) 555-0163</span></a></div></header>
 <div class="hero"><div class="wrap">
 <h1>AC down? We'll have you cool again today.</h1>
 <p>Repair, maintenance and new systems for San Antonio homes. Straight answers on whether to repair or replace.</p>
@@ -71,19 +72,20 @@ footer{background:#fff;border-top:1px solid var(--line);color:var(--muted);font-
 <img src="https://images.unsplash.com/photo-1776860150305-108ed577d7d4?auto=format&fit=crop&w=1000&q=68" alt="Outdoor heat pump unit" loading="lazy"></div></section>
 <section class="area"><div class="wrap"><h2>Areas we serve</h2><p class="sub">Based in San Antonio, serving these communities and everything in between.</p><div class="chips"><span>San Antonio</span><span>New Braunfels</span><span>Boerne</span><span>Schertz</span><span>Converse</span><span>Helotes</span><span>Alamo Heights</span><span>Live Oak</span></div></div></section>
 
-<section style="padding-top:0"><div class="wrap"><h2>Recent work</h2><p class="sub">A few recent jobs around San Antonio.</p><div class="gallery"><figure><img src="https://images.unsplash.com/photo-1776860155275-eee24bfb1dee?auto=format&fit=crop&w=700&q=68" alt="Heat pump install, Boerne" loading="lazy"><figcaption>Heat pump install, Boerne</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1763525933838-43af5e0f124d?auto=format&fit=crop&w=700&q=68" alt="Condenser replacement, Schertz" loading="lazy"><figcaption>Condenser replacement, Schertz</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1660330589827-da8ab7dd3c02?auto=format&fit=crop&w=700&q=68" alt="Electrical repair, San Antonio" loading="lazy"><figcaption>Electrical repair, San Antonio</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1705579605238-24a90c8799c5?auto=format&fit=crop&w=700&q=68" alt="Rooftop unit service, Live Oak" loading="lazy"><figcaption>Rooftop unit service, Live Oak</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1776860150305-108ed577d7d4?auto=format&fit=crop&w=700&q=68" alt="System upgrade, Helotes" loading="lazy"><figcaption>System upgrade, Helotes</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1660330590022-9f4ff56b63f6?auto=format&fit=crop&w=700&q=68" alt="Maintenance visit, Converse" loading="lazy"><figcaption>Maintenance visit, Converse</figcaption></figure></div></div></section>
+<section><div class="wrap"><h2>Recent work</h2><p class="sub">A few recent jobs around San Antonio.</p><div class="gallery"><figure><img src="https://images.unsplash.com/photo-1776860155275-eee24bfb1dee?auto=format&fit=crop&w=700&q=68" alt="Heat pump install, Boerne" loading="lazy"><figcaption>Heat pump install, Boerne</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1763525933838-43af5e0f124d?auto=format&fit=crop&w=700&q=68" alt="Condenser replacement, Schertz" loading="lazy"><figcaption>Condenser replacement, Schertz</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1718203862467-c33159fdc504?auto=format&fit=crop&w=700&q=68" alt="AC unit service, San Antonio" loading="lazy"><figcaption>AC unit service, San Antonio</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1700124113583-81aa99ea2aa2?auto=format&fit=crop&w=700&q=68" alt="New condenser, Live Oak" loading="lazy"><figcaption>New condenser, Live Oak</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1770625467384-304e461ef1be?auto=format&fit=crop&w=700&q=68" alt="Smart thermostat, Helotes" loading="lazy"><figcaption>Smart thermostat, Helotes</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1776860150250-757406c52438?auto=format&fit=crop&w=700&q=68" alt="Multi-unit maintenance, Converse" loading="lazy"><figcaption>Multi-unit maintenance, Converse</figcaption></figure></div></div></section>
 <section id="quote"><div class="wrap"><div class="cta"><div><h2>Need it fixed? Get a free quote.</h2><p>Call (210) 555-0163 or send the form. We call back within the hour during business hours.</p></div>
 <form id="qf"><input type="hidden" name="access_key" value="e62425fa-aae5-42e2-921f-4ee268a73d63"><input type="hidden" name="subject" value="New quote request: Coastal Comfort Heating &amp; Air"><input type="checkbox" name="botcheck" style="display:none">
-<input name="name" placeholder="Your name" autocomplete="name" required><input name="phone" type="tel" placeholder="Phone number" autocomplete="tel" required><textarea name="message" rows="3" placeholder="What do you need done?"></textarea><button>Request a quote</button></form></div></div></section>
+<label>Your name<input name="name" autocomplete="name" required></label><label>Phone number<input name="phone" type="tel" autocomplete="tel" required></label><label>What do you need done?<textarea name="message" rows="3"></textarea></label><button>Request a quote</button><p class="err" role="alert" hidden>Could not send. Please call instead.</p></form></div></div></section>
+<section style="padding-top:0"><div class="wrap"><div class="back"><div><b>Like this site?</b><p>This is a sample. Tradesmith Web builds one like it for your business, free to preview, and you pay only if you like it.</p></div><a href="https://tradesmithweb.github.io/#contact">Get your free preview</a></div></div></section>
 </main>
 <footer><div class="wrap foot"><div><b>Coastal Comfort Heating &amp; Air</b>AC and heating service in San Antonio, TX<a href="tel:2105550163" style="margin-top:8px;color:var(--ink);font-weight:600">(210) 555-0163</a></div>
 <div><b>Hours</b>Mon to Sat: 7am to 7pm<br>Sun: emergency calls</div>
 <div><b>Services</b><a href="#quote">AC repair</a><a href="#quote">New AC systems</a><a href="#quote">Heating</a><a href="#quote">Tune-ups</a><a href="#quote">Indoor air</a></div></div>
-<div class="wrap copy"><span>© 2026 Coastal Comfort Heating &amp; Air</span><span>Photos: Unsplash</span></div></footer>
+<div class="wrap copy"><span>© 2026 Coastal Comfort Heating &amp; Air</span><span>Sample site, not a real business · Photos: Unsplash</span></div></footer>
 <div class="sticky"><a class="c" href="tel:2105550163">Call</a><a class="q" href="sms:2105550163">Text</a><a class="q" href="#quote">Quote</a></div>
 <script>
 document.getElementById('qf').addEventListener('submit',async e=>{e.preventDefault();const f=e.target,btn=f.querySelector('button');btn.disabled=true;btn.textContent='Sending...';
 try{const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{Accept:'application/json'},body:new FormData(f)});const j=await r.json();
-if(!j.success)throw 0;f.outerHTML='<div class="done">This is a sample site. On your real site, this message goes straight to your email.</div>'}catch{btn.disabled=false;btn.textContent='Could not send. Please call instead.'}});
+if(!j.success)throw 0;f.outerHTML='<div class="done">This is a sample site. On your real site, this message goes straight to your email.</div>'}catch{btn.disabled=false;btn.textContent='Request a quote';f.querySelector('.err').hidden=false}});
 </script>
 </body></html>
